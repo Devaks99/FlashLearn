@@ -69,7 +69,10 @@ h2::after {
 
 .language-content{
 border-radius: 8px;
+text-shadow:none !important;
+
 }
+
 
 .container {
     display: flex;
