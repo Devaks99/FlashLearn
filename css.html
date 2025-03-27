@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashLearn - CSS3</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logoensino.png">
+</head>
+<body>
+<!-- Header Mobile -->
+<header class="mobile-header">
+    <div class="mobile-header-content">
+        <div class="logo">
+            <img src="img/logoensino.png" alt="FlashLearn Logo">
+            <h2>FlashLearn</h2>
+        </div>
+        <button class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="mobile-menu">
+        <div class="mobile-menu-content">
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" class="menu-action">Quizzes</a>
+                <a href="index.html" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <button id="close-menu" class="close-menu">×</button>
+            <div class="logo">
+                <img src="img/logoensino.png" alt="FlashLearn Logo">
+                <h2>FlashLearn</h2>
+            </div>
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" id="quizzes-link" class="menu-action">Quizzes</a>
+                <a href="index.html" id="dashboard-link" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </nav>
+
+        <main id="main-content">
+            <section class="language-content">
+                <h1>CSS3</h1>
+                
+                <div class="content-section">
+                    <h2>📚 Conteúdo Educacional</h2>
+                    <div id="html-content" class="study-section">
+                    
+                                    <div class="study-section">
+                                        <h3>Domine CSS3 - Iniciante</h3>
+                        
+                                        <section class="content-section">
+                                            <h3>O Que é CSS?</h3>
+                                            <div class="code-comparison">
+                                                <div>
+                                                    <h4>Definição</h4>
+                                                    <p>CSS (Cascading Style Sheets) é uma linguagem de estilo usada para:</p>
+                                                    <ul>
+                                                        <li>Estilizar páginas web</li>
+                                                        <li>Controlar layout e apresentação</li>
+                                                        <li>Criar designs responsivos</li>
+                                                        <li>Adicionar efeitos visuais</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h4>Sintaxe Básica</h4>
+                                                    <pre><code>seletor {
+                                        propriedade: valor;
+                                        /* Exemplo: */
+                                        color: blue;
+                                        margin: 10px;
+                                        }</code></pre>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="best-practice">
+                                                <strong>Componentes Principais:</strong>
+                                                <ol>
+                                                    <li><code>Seletores</code> - Elementos HTML a serem estilizados</li>
+                                                    <li><code>Propriedades</code> - Características a modificar (cor, tamanho, etc)</li>
+                                                    <li><code>Valores</code> - Configurações específicas para cada propriedade</li>
+                                                </ol>
+                                            </div>
+                                        </section>
+                                        
+                                        <!-- Seção Adicionada: HTML vs CSS -->
+                                        <section class="content-section">
+                                            <h3>HTML vs CSS - Papéis</h3>
+                                            <div class="code-comparison">
+                                                <div>
+                                                    <h4>HTML</h4>
+                                                    <ul>
+                                                        <li>Estrutura e conteúdo</li>
+                                                        <li>Semântica da página</li>
+                                                        <li>Esqueleto do site</li>
+                                                        <li>Tags: &lt;h1&gt;, &lt;p&gt;, &lt;div&gt;</li>
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                                <div>
+                                                    <h4>CSS</h4>
+                                                    <ul>
+                                                        <li>Estilo e apresentação</li>
+                                                        <li>Layout e design visual</li>
+                                                        <li>Pele e roupagem do site</li>
+                                                        <li>Propriedades: color, margin, font-size</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="best-practice">
+                                                <strong>Analogia:</strong> Se HTML é a casa (paredes, portas), CSS é a decoração (cores, móveis, layout)
+                                            </div>
+                                        </section>
+                                        
+                                        <!-- Seção Adicionada: Conceitos Fundamentais -->
+                                        <section class="content-section">
+                                            <h3>Conceitos-Chave</h3>
+                                            <pre><code>/* Cascata */
+                                        p {
+                                        color: red; /* Sobrescrito */
+                                        color: blue; /* Aplicado */
+                                        }
+                                        
+                                        /* Especificidade */
+                                        #id-exemplo { /* 100 pontos */
+                                        color: green;
+                                        }
+                                        .classe-exemplo { /* 10 pontos */
+                                        color: yellow;
+                                        }</code></pre>
+                                            <div class="best-practice">
+                                                <strong>Princípios Importantes:</strong>
+                                                <ul>
+                                                    <li><code>Cascata:</code> Ordem de aplicação dos estilos</li>
+                                                    <li><code>Especificidade:</code> Prioridade entre seletores</li>
+                                                    <li><code>Herança:</code> Propriedades passadas para elementos filhos</li>
+                                                    <li><code>Responsividade:</code> Adaptação a diferentes telas</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                                   
+                                                    <!-- Seção de Descrição Expandida -->
+                                                    <section class="content-section">
+                                                        <h3>Guia Completo de Propriedades CSS</h3>
+                                                        
+                                                        <div class="css-guide">
+                                                            <!-- Modelo de Caixa -->
+                                                            <div class="property-group">
+                                                                <h4>📦 Modelo de Caixa</h4>
+                                                                <div class="code-comparison">
+                                                                    <div>
+                                                                        <pre><code>.elemento {
+                                            width: 300px;       /* Largura total */
+                                            height: 150px;      /* Altura definida */
+                                            padding: 20px;      /* Espaço interno */
+                                            border: 2px solid #333; /* Borda sólida */
+                                            margin: 15px;       /* Espaço externo */
+                                            box-sizing: border-box; /* Modelo alternativo */
+                                        }</code></pre>
+                                                                    </div>
+                                                                    <div class="best-practice">
+                                                                        <strong>Dica:</strong> Use <code>box-sizing: border-box</code> para cálculos dimensionais mais intuitivos
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Layout Moderno -->
+                                                            <div class="property-group">
+                                                                <h4>🎛️ Layout Moderno</h4>
+                                                                <div class="code-comparison">
+                                                                    <div>
+                                                                        <h5>Flexbox</h5>
+                                                                        <pre><code>.container {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            gap: 10px; /* Espaço entre itens */
+                                        }</code></pre>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h5>CSS Grid</h5>
+                                                                        <pre><code>.container {
+                                            display: grid;
+                                            grid-template-columns: 1fr 2fr;
+                                            grid-template-rows: auto;
+                                            align-content: start;
+                                            grid-gap: 20px;
+                                        }</code></pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Posicionamento -->
+                                                            <div class="property-group">
+                                                                <h4>📍 Posicionamento</h4>
+                                                                <pre><code>.elemento {
+                                            position: relative; /* Fluxo normal */
+                                            top: 10px;
+                                            z-index: 10; /* Camada de sobreposição */
+                                        
+                                            /* Alternativas: 
+                                            absolute (relativo ao parente posicionado)
+                                            fixed (relativo à viewport)
+                                            sticky (híbrido) */
+                                        }</code></pre>
+                                                                <div class="best-practice">
+                                                                    Use <code>position: sticky</code> para headers fixos e elementos persistentes
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Tipografia Avançada -->
+                                                            <div class="property-group">
+                                                                <h4>🔠 Tipografia Avançada</h4>
+                                                                <div class="code-comparison">
+                                                                    <div>
+                                                                        <pre><code>.texto {
+                                            font-weight: 600; /* Espessura (100-900) */
+                                            font-style: italic;
+                                            text-decoration: underline wavy #e74c3c;
+                                            text-transform: capitalize;
+                                            line-height: 1.6;
+                                            letter-spacing: 0.5px;
+                                        }</code></pre>
+                                                                    </div>
+                                                                    <div>
+                                                                        <pre><code>.sombra {
+                                            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                                            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                                        }</code></pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Efeitos e Transições -->
+                                                            <div class="property-group">
+                                                                <h4>🎭 Efeitos & Transições</h4>
+                                                                <pre><code>.botao {
+                                            transition: all 0.3s ease-in-out;
+                                            transform: scale(1);
+                                            opacity: 0.9;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .botao:hover {
+                                            transform: scale(1.05);
+                                            opacity: 1;
+                                            filter: brightness(1.1);
+                                        }</code></pre>
+                                                                <div class="best-practice">
+                                                                    Combine <code>transition</code> com <code>transform</code> para animações performáticas
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Responsividade -->
+                                                            <div class="property-group">
+                                                                <h4>📱 Responsividade</h4>
+                                                                <pre><code>@media (max-width: 768px) {
+                                            .container {
+                                                flex-direction: column;
+                                                padding: 10px;
+                                            }
+                                            
+                                            .texto {
+                                                font-size: clamp(1rem, 4vw, 1.2rem);
+                                            }
+                                        }</code></pre>
+                                                                <div class="best-practice">
+                                                                    Use unidades relativas (vw, %) e <code>clamp()</code> para tipografia responsiva
+                                                                </div>
+                                                            </div>
+                                        
+                                                            <!-- Variáveis CSS -->
+                                                            <div class="property-group">
+                                                                <h4>🎨 Variáveis CSS</h4>
+                                                                <pre><code>:root {
+                                            --cor-primaria: #3498db;
+                                            --espacamento: 1rem;
+                                            --sombra: 0 2px 8px rgba(0,0,0,0.1);
+                                        }
+                                        
+                                        .elemento {
+                                            color: var(--cor-primaria);
+                                            padding: calc(var(--espacamento) * 2);
+                                            box-shadow: var(--sombra);
+                                        }</code></pre>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                      <!-- Seção Adicionada: Boas Práticas -->
+                                                <section class="content-section">
+                                                    <h3>Boas Práticas CSS</h3>
+                                                    <div class="code-comparison">
+                                                        <div>
+                                                            <h4>Organização</h4>
+                                                            <pre><code>/* Stylesheet organizada */
+                                        /* 1. Reset/Normalize */
+                                        /* 2. Variáveis */
+                                        /* 3. Estilos globais */
+                                        /* 4. Componentes */
+                                        /* 5. Media Queries */</code></pre>
+                                                        </div>
+                                                        <div>
+                                                            <h4>Performance</h4>
+                                                            <ul>
+                                                                <li>Minificar código em produção</li>
+                                                                <li>Usar seletores simples</li>
+                                                                <li>Evitar !important</li>
+                                                                <li>Utilizar sprites para ícones</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="best-practice mega-tip">
+                                                        <strong>Dica Profissional:</strong> Use metodologias como BEM para nomes de classes
+                                                    </div>
+                                                </section>
+                                               
+                                    
+                <div class="playlist-section">
+                    <h2>🎬 Playlist CSS3</h2>
+                    <div class="playlist-embed">
+                        <iframe 
+                            src="https://www.youtube.com/embed/videoseries?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Créditos! -->
+                <div class="playlist-credits">
+                    <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+                    <small>
+                        Direitos autorais © 2013-2023 Curso em Vídeo<br>
+                        Esta apresentação contém trechos da playlist oficial disponível em 
+                        <a href="https://www.cursoemvideo.com/curso/html5-css3/" target="_blank" rel="noopener"> Curso de CSS3 - Curso em Vídeo</a>
+                    </small>
+                </div>
+            </div>
+            </section>
+        </main>
+    </div>
+    
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M13 5.41V21a1 1 0 0 1-2 0V5.41l-4.3 4.3a1 1 0 1 1-1.4-1.42l6-6a1 1 0 0 1 1.4 0l6 6a1 1 0 1 1-1.4 1.42L13 5.4z"/>
+        </svg>
+    </button>
+
+    <div class="mobile-copyright">
+        <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+      </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/menuHamburguer.js"></script>
+    <script src="src/js/Scroll-top.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

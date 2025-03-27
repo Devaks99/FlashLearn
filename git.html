@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashLearn - Git</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logoensino.png">
+</head>
+<body>
+<!-- Header Mobile -->
+<header class="mobile-header">
+    <div class="mobile-header-content">
+        <div class="logo">
+            <img src="img/logoensino.png" alt="FlashLearn Logo">
+            <h2>FlashLearn</h2>
+        </div>
+        <button class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="mobile-menu">
+        <div class="mobile-menu-content">
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" class="menu-action">Quizzes</a>
+                <a href="index.html" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <button id="close-menu" class="close-menu">×</button>
+            <div class="logo">
+                <img src="img/logoensino.png" alt="FlashLearn Logo">
+                <h2>FlashLearn</h2>
+            </div>
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" id="quizzes-link" class="menu-action">Quizzes</a>
+                <a href="index.html" id="dashboard-link" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </nav>
+
+        <main id="main-content">
+            <section class="language-content">
+                <h1>Git</h1>
+                
+                <div class="content-section">
+                    <h2>📚 Conteúdo Educacional</h2>
+                    <div id="html-content" class="study-section">
+                    
+                                    <div class="study-section">
+                                        <h3>Domine Git - Iniciante</h3>
+                        
+                                        <section class="content-section">
+                                            <h3>O que é Git?</h3>
+                                            <div class="code-comparison">
+                                                <div>
+                                                    <h4>Definição</h4>
+                                                    <ul>
+                                                        <li>Sistema de controle de versão distribuído</li>
+                                                        <li>Rastreia mudanças em arquivos</li>
+                                                        <li>Permite colaboração eficiente</li>
+                                                        <li>Histórico completo de alterações</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h4>Fluxo Básico</h4>
+                                                    <pre><code>git init       # Inicia repositório
+                                        git add .      # Prepara arquivos
+                                        git commit -m "mensagem"  # Salva versão
+                                        git push       # Envia para remoto</code></pre>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        
+                                        <!-- Seção Adicionada: Comandos Essenciais -->
+                                        <section class="content-section">
+                                            <h3>Comandos Diários</h3>
+                                            <pre><code># Clonar repositório
+                                        git clone https://github.com/usuario/repo.git
+                                        
+                                        # Ver status
+                                        git status
+                                        
+                                        # Ver histórico
+                                        git log --oneline
+                                        
+                                        # Ver diferenças
+                                        git diff</code></pre>
+                                            <div class="best-practice">
+                                                <strong>Dica:</strong> Use <code>git add -p</code> para adicionar mudanças parcialmente
+                                            </div>
+                                        </section>
+                                        
+                                        <!-- Seção Adicionada: Branching -->
+                                        <section class="content-section">
+                                            <h3>Trabalhando com Branches</h3>
+                                            <div class="code-comparison">
+                                                <div>
+                                                    <h4>Criar e Trocar</h4>
+                                                    <pre><code>git branch nova-feature
+                                        git checkout nova-feature
+                                        # Ou
+                                        git checkout -b nova-feature</code></pre>
+                                                </div>
+                                                <div>
+                                                    <h4>Integrar Mudanças</h4>
+                                                    <pre><code>git merge nova-feature
+                                        git rebase main</code></pre>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        
+                                        <!-- Seção Adicionada: Trabalhando com Remotos -->
+                                        <section class="content-section">
+                                            <h3>Repositórios Remotos</h3>
+                                            <pre><code># Adicionar origem
+                                        git remote add origin URL
+                                        
+                                        # Enviar alterações
+                                        git push -u origin main
+                                        
+                                        # Atualizar local
+                                        git pull origin main
+                                        
+                                        # Ver remotos
+                                        git remote -v</code></pre>
+                                        </section>
+                                        
+                                        <!-- Seção Adicionada: Desfazendo Alterações -->
+                                        <section class="content-section">
+                                            <h3>Corrigindo Erros</h3>
+                                            <div class="code-comparison">
+                                                <div>
+                                                    <h4>Antes do Commit</h4>
+                                                    <pre><code>git checkout -- arquivo.txt
+                                        git reset HEAD arquivo.txt</code></pre>
+                                                </div>
+                                                <div>
+                                                    <h4>Após Commit</h4>
+                                                    <pre><code>git commit --amend
+                                        git revert HEAD
+                                        git reset --hard HASH</code></pre>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        
+                                                    <section class="content-section">
+                                                        <h3>Rebase vs Merge</h3>
+                                                        <div class="code-comparison">
+                                                            <div>
+                                                                <h4>Merge</h4>
+                                                                <pre><code>git checkout main
+                                        git merge feature-branch</code></pre>
+                                                            </div>
+                                                            <div>
+                                                                <h4>Rebase</h4>
+                                                                <pre><code>git checkout feature-branch
+                                        git rebase main</code></pre>
+                                                            </div>
+                                                        </div>
+                                                        <div class="best-practice">
+                                                            <strong>Dica:</strong> Use rebase para manter histórico linear, merge para preservar contexto
+                                                        </div>
+                                                    </section>
+                                        
+                                                    <section class="content-section">
+                                                        <h3>Git Hooks</h3>
+                                                        <pre><code>#!/bin/sh
+                                        # .git/hooks/pre-commit
+                                        npm test
+                                        if [ $? -ne 0 ]; then
+                                            echo "Testes falharam! Commit abortado."
+                                            exit 1
+                                        fi</code></pre>
+                                                        <p>Scripts executados em eventos específicos do Git</p>
+                                                    </section>
+                                        
+                                                    <section class="content-section">
+                                                        <h3>Stash Seletivo</h3>
+                                                        <pre><code>git stash push -p -m "Meu stash"
+                                        # Interativamente seleciona mudanças para stash</code></pre>
+                                                        <ul>
+                                                            <li>-p: modo interativo</li>
+                                                            <li>-m: mensagem descritiva</li>
+                                                            <li>Útil para separar alterações não relacionadas</li>
+                                                        </ul>
+                                                    </section>
+                                               
+                                    
+                                                    <div class="playlist-section">
+                                                        <h2>🎬 Playlist Git</h2>
+                                                        <div class="video-container">
+                                                            <a href="https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&si=LHXTqWgMvdUDl9Od" 
+                                                               target="_blank" 
+                                                               rel="noopener noreferrer"
+                                                               class="video-link">
+                                                                <img src="https://img.youtube.com/vi/xEKo29OWILE/hqdefault.jpg" 
+                                                                     alt="Curso Node.js" 
+                                                                     class="video-cover">
+                                                                <div class="play-button"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Créditos! -->
+                                                    <div class="playlist-credits">
+                                                        <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+                                                        <small>
+                                                            Direitos autorais © 2013-2023 Curso em Vídeo<br>
+                                                            Playlist oficial disponível em 
+                                                            <a href="https://www.cursoemvideo.com/curso/curso-de-git/" target="_blank" rel="noopener">
+                                                                Curso de Git - Curso em Vídeo
+                                                            </a>
+                                                        </small>
+                                                    </div>
+                                                </div>
+            </section>
+        </main>
+    </div>
+
+<button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="currentColor" d="M13 5.41V21a1 1 0 0 1-2 0V5.41l-4.3 4.3a1 1 0 1 1-1.4-1.42l6-6a1 1 0 0 1 1.4 0l6 6a1 1 0 1 1-1.4 1.42L13 5.4z"/>
+    </svg>
+</button>
+
+<div class="mobile-copyright">
+    <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/menuHamburguer.js"></script>
+    <script src="src/js/Scroll-top.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

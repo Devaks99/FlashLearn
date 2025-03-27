@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashLearn - Quizzes</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logoensino.png">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<!-- Header Mobile -->
+<header class="mobile-header">
+    <div class="mobile-header-content">
+        <div class="logo">
+            <img src="img/logoensino.png" alt="FlashLearn Logo">
+            <h2>FlashLearn</h2>
+        </div>
+        <button class="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="mobile-menu">
+        <div class="mobile-menu-content">
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" class="menu-action">Quizzes</a>
+                <a href="index.html" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <button id="close-menu" class="close-menu">×</button>
+            <div class="logo">
+                <img src="img/logoensino.png" alt="FlashLearn Logo">
+                <h2>FlashLearn</h2>
+            </div>
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" id="quizzes-link" class="menu-action">Quizzes</a>
+                <a href="index.html" id="dashboard-link" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </nav>
+
+        <main id="main-content">
+            <section class="quizzes-section">
+                <h1 class="quizes">Quizzes - FlashLearn 🚀</h1>
+                
+                <div class="quizzes-grid" id="quizzesGrid">
+                    <!-- Cards das linguagens -->
+                    <div class="quiz-card" data-lang="html">
+                        <div class="quiz-icon">📄</div>
+                        <h3>HTML5</h3>
+                        <p>20 questões sobre marcação web</p>
+                    </div>
+
+                    <div class="quiz-card" data-lang="css">
+                        <div class="quiz-icon">🎨</div>
+                        <h3>CSS</h3>
+                        <p>20 questões sobre estilização</p>
+                    </div>
+
+                    <div class="quiz-card" data-lang="javascript">
+                        <div class="quiz-icon">⚡</div>
+                        <h3>JavaScript</h3>
+                        <p>20 questões sobre programação</p>
+                    </div>
+
+                    <div class="quiz-card" data-lang="nodejs">
+                        <div class="quiz-icon">🖥️</div>
+                        <h3>Node.js</h3>
+                        <p>20 questões sobre backend</p>
+                    </div>
+
+                    <div class="quiz-card" data-lang="git">
+                        <div class="quiz-icon">📦</div>
+                        <h3>Git</h3>
+                        <p>20 questões sobre versionamento</p>
+                    </div>
+
+                    <div class="quiz-card" data-lang="github">
+                        <div class="quiz-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>20 questões sobre repositórios</p>
+                    </div>
+                </div>
+
+                <div class="quiz-container hidden" id="quizContainer">
+                    <div class="quiz-active">
+                        <div class="quiz-header">
+                            <h2 id="quizTitle"></h2>
+                            <div class="score-box">
+                                <span>Pontuação: </span>
+                                <span id="currentScore">0</span>
+                            </div>
+                        </div>
+                
+                        <div class="question-card">
+                            <p id="questionText"></p>
+                            <div id="optionsContainer"></div>
+                            <div id="feedback" class="hidden"></div>
+                        </div>
+                
+                        <button id="nextQuestion" class="hidden">Próxima Questão →</button>
+                    </div>
+
+                    <div class="quiz-result hidden" id="quizResult">
+                        <!-- Aqui será inserido o resultado via JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="mobile-copyright">
+        <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+      </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/quiz.js"></script>
+    <script src="src/js/menuHamburguer.js"></script>
+    <script src="src/js/script.js"></script>
+    
+</body>
+</html>

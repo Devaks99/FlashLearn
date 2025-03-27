@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashLearn - Guia de Estudos</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logoensino.png">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Mobile -->
+    <header class="mobile-header">
+        <div class="mobile-header-content">
+            <div class="logo">
+                <img src="img/logoensino.png" alt="FlashLearn Logo">
+                <h2>FlashLearn</h2>
+            </div>
+            <button class="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu">
+            <div class="mobile-menu-content">
+                <ul class="menu-linguagens">
+                    <li class="menu-title">Linguagens para Estudo</li>
+                    <li><a href="html.html" data-lang="html">HTML5</a></li>
+                    <li><a href="css.html" data-lang="css">CSS3</a></li>
+                    <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                    <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                    <li><a href="git.html" data-lang="git">Git</a></li>
+                    <li><a href="github.html" data-lang="github">GitHub</a></li>
+                </ul>
+                <div class="menu-actions">
+                    <a href="quizzes.html" class="menu-action">Quizzes</a>
+                    <a href="index.html" class="menu-action">Home</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Desktop -->
+        <nav id="sidebar" class="sidebar">
+            <div class="logo">
+                <img src="img/logoensino.png" alt="FlashLearn Logo">
+                <h2>FlashLearn</h2>
+            </div>
+            <ul class="menu-linguagens">
+                <li class="menu-title">Linguagens para Estudo</li>
+                <li><a href="html.html" data-lang="html">HTML5</a></li>
+                <li><a href="css.html" data-lang="css">CSS3</a></li>
+                <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+                <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+                <li><a href="git.html" data-lang="git">Git</a></li>
+                <li><a href="github.html" data-lang="github">GitHub</a></li>
+            </ul>
+            <div class="menu-actions">
+                <a href="quizzes.html" class="menu-action">Quizzes</a>
+                <a href="index.html" class="menu-action">Home</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+            </div>
+        </nav>
+
+        <main id="main-content">
+            <section id="home">
+                <h1 class="welcome">Bem-vindo(a) ao FlashLearn!</h1>
+                <div class="feature-cards">
+                    <div class="feature-card" data-animation="slide-left">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Aprendizado Rápido</h3>
+                        <p>Aprenda tecnologias de programação de forma rápida e interativa.</p>
+                    </div>
+                    <div class="feature-card" data-animation="slide-up">
+                        <div class="feature-icon">📊</div>
+                        <h3>Sistema de Pontuação</h3>
+                        <p>Acompanhe seu progresso através de um sistema de pontos motivacional.</p>
+                    </div>
+                    <div class="feature-card" data-animation="slide-right">
+                        <div class="feature-icon">🧩</div>
+                        <h3>Quizzes Interativos</h3>
+                        <p>Teste seus conhecimentos com quizzes desafiadores para cada linguagem.</p>
+                    </div>
+                    <div class="feature-card" data-animation="slide-left">
+                        <div class="feature-icon">📚</div>
+                        <h3>Conteúdo Completo</h3>
+                        <p>Materiais de estudo detalhados e atualizados para diversos níveis.</p>
+                    </div>
+                    <div class="feature-card" data-animation="slide-up">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Multiplataforma</h3>
+                        <p>Acesse de qualquer dispositivo: computador, tablet ou smartphone.</p>
+                    </div>
+                    <div class="feature-card" data-animation="slide-right">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Progresso Salvo</h3>
+                        <p>Seu progresso é automaticamente salvo para continuar de onde parou.</p>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <h2>Comece sua jornada de aprendizado</h2>
+                    <p>Escolha uma linguagem e inicie seus estudos agora mesmo!</p>
+                    <div class="language-quick-access">
+                        <a href="html.html" data-lang="html" class="lang-btn">HTML5</a>
+                        <a href="css.html" data-lang="css" class="lang-btn">CSS3</a>
+                        <a href="javascript.html" data-lang="javascript" class="lang-btn">JavaScript</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="mobile-copyright">
+        <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor"
+                d="M13 5.41V21a1 1 0 0 1-2 0V5.41l-4.3 4.3a1 1 0 1 1-1.4-1.42l6-6a1 1 0 0 1 1.4 0l6 6a1 1 0 1 1-1.4 1.42L13 5.4z" />
+        </svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="src/js/menuHamburguer.js"></script>
+    <script src="src/js/Scroll-top.js"></script>
+ 
+    
+</body>
+</html>
