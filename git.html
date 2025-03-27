@@ -79,172 +79,172 @@
                     <div id="html-content" class="study-section">
                     
                                     <div class="study-section">
-                                        <h3>Domine Git - Iniciante</h3>
+<h3>Domine Git - Iniciante</h3>
                         
-                                        <section class="content-section">
-                                            <h3>O que é Git?</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Definição</h4>
-                                                    <ul>
-                                                        <li>Sistema de controle de versão distribuído</li>
-                                                        <li>Rastreia mudanças em arquivos</li>
-                                                        <li>Permite colaboração eficiente</li>
-                                                        <li>Histórico completo de alterações</li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h4>Fluxo Básico</h4>
-                                                    <pre><code>git init       # Inicia repositório
-                                        git add .      # Prepara arquivos
-                                        git commit -m "mensagem"  # Salva versão
-                                        git push       # Envia para remoto</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Comandos Essenciais -->
-                                        <section class="content-section">
-                                            <h3>Comandos Diários</h3>
-                                            <pre><code># Clonar repositório
-                                        git clone https://github.com/usuario/repo.git
-                                        
-                                        # Ver status
-                                        git status
-                                        
-                                        # Ver histórico
-                                        git log --oneline
-                                        
-                                        # Ver diferenças
-                                        git diff</code></pre>
-                                            <div class="best-practice">
-                                                <strong>Dica:</strong> Use <code>git add -p</code> para adicionar mudanças parcialmente
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Branching -->
-                                        <section class="content-section">
-                                            <h3>Trabalhando com Branches</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Criar e Trocar</h4>
-                                                    <pre><code>git branch nova-feature
-                                        git checkout nova-feature
-                                        # Ou
-                                        git checkout -b nova-feature</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>Integrar Mudanças</h4>
-                                                    <pre><code>git merge nova-feature
-                                        git rebase main</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Trabalhando com Remotos -->
-                                        <section class="content-section">
-                                            <h3>Repositórios Remotos</h3>
-                                            <pre><code># Adicionar origem
-                                        git remote add origin URL
-                                        
-                                        # Enviar alterações
-                                        git push -u origin main
-                                        
-                                        # Atualizar local
-                                        git pull origin main
-                                        
-                                        # Ver remotos
-                                        git remote -v</code></pre>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Desfazendo Alterações -->
-                                        <section class="content-section">
-                                            <h3>Corrigindo Erros</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Antes do Commit</h4>
-                                                    <pre><code>git checkout -- arquivo.txt
-                                        git reset HEAD arquivo.txt</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>Após Commit</h4>
-                                                    <pre><code>git commit --amend
-                                        git revert HEAD
-                                        git reset --hard HASH</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                                    <section class="content-section">
-                                                        <h3>Rebase vs Merge</h3>
-                                                        <div class="code-comparison">
-                                                            <div>
-                                                                <h4>Merge</h4>
-                                                                <pre><code>git checkout main
-                                        git merge feature-branch</code></pre>
-                                                            </div>
-                                                            <div>
-                                                                <h4>Rebase</h4>
-                                                                <pre><code>git checkout feature-branch
-                                        git rebase main</code></pre>
-                                                            </div>
-                                                        </div>
-                                                        <div class="best-practice">
-                                                            <strong>Dica:</strong> Use rebase para manter histórico linear, merge para preservar contexto
-                                                        </div>
-                                                    </section>
-                                        
-                                                    <section class="content-section">
-                                                        <h3>Git Hooks</h3>
-                                                        <pre><code>#!/bin/sh
-                                        # .git/hooks/pre-commit
-                                        npm test
-                                        if [ $? -ne 0 ]; then
-                                            echo "Testes falharam! Commit abortado."
-                                            exit 1
-                                        fi</code></pre>
-                                                        <p>Scripts executados em eventos específicos do Git</p>
-                                                    </section>
-                                        
-                                                    <section class="content-section">
-                                                        <h3>Stash Seletivo</h3>
-                                                        <pre><code>git stash push -p -m "Meu stash"
-                                        # Interativamente seleciona mudanças para stash</code></pre>
-                                                        <ul>
-                                                            <li>-p: modo interativo</li>
-                                                            <li>-m: mensagem descritiva</li>
-                                                            <li>Útil para separar alterações não relacionadas</li>
-                                                        </ul>
-                                                    </section>
-                                               
-                                    
-                                                    <div class="playlist-section">
-                                                        <h2>🎬 Playlist Git</h2>
-                                                        <div class="video-container">
-                                                            <a href="https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&si=LHXTqWgMvdUDl9Od" 
-                                                               target="_blank" 
-                                                               rel="noopener noreferrer"
-                                                               class="video-link">
-                                                                <img src="https://img.youtube.com/vi/xEKo29OWILE/hqdefault.jpg" 
-                                                                     alt="Curso Node.js" 
-                                                                     class="video-cover">
-                                                                <div class="play-button"></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+<section class="content-section">
+    <h3>O que é Git?</h3>
+    <div class="code-comparison">
+        <div>
+            <h4>Definição</h4>
+            <ul>
+                <li>Sistema de controle de versão distribuído</li>
+                <li>Rastreia mudanças em arquivos</li>
+                <li>Permite colaboração eficiente</li>
+                <li>Histórico completo de alterações</li>
+            </ul>
+        </div>
+        <div>
+            <br>
+            <pre><h4>Fluxo Básico</h4><code>git init       # Inicia repositório
+git add .      # Prepara arquivos
+git commit -m "mensagem"  # Salva versão
+git push       # Envia para remoto</code></pre>
+        </div>
+    </div>
+</section>
 
-                                                    <!-- Créditos! -->
-                                                    <div class="playlist-credits">
-                                                        <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
-                                                        <small>
-                                                            Direitos autorais © 2013-2023 Curso em Vídeo<br>
-                                                            Playlist oficial disponível em 
-                                                            <a href="https://www.cursoemvideo.com/curso/curso-de-git/" target="_blank" rel="noopener">
-                                                                Curso de Git - Curso em Vídeo
-                                                            </a>
-                                                        </small>
-                                                    </div>
-                                                </div>
+<!-- Seção Adicionada: Comandos Essenciais -->
+<section class="content-section">
+    <h3>Comandos Diários</h3>
+    <pre><code># Clonar repositório
+git clone https://github.com/usuario/repo.git
+
+# Ver status
+git status
+
+# Ver histórico
+git log --oneline
+
+# Ver diferenças
+git diff</code></pre>
+    <div class="best-practice">
+        <strong>Dica:</strong> Use <code>git add -p</code> para adicionar mudanças parcialmente
+    </div>
+</section>
+
+<!-- Seção Adicionada: Branching -->
+<section class="content-section">
+    <h3>Trabalhando com Branches</h3>
+    <div class="code-comparison">
+        <div>
+            <h4>Criar e Trocar</h4>
+            <pre><code>git branch nova-feature
+git checkout nova-feature
+# Ou
+git checkout -b nova-feature</code></pre>
+        </div>
+        <div>
+            <h4>Integrar Mudanças</h4>
+            <pre><code>git merge nova-feature
+git rebase main</code></pre>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Adicionada: Trabalhando com Remotos -->
+<section class="content-section">
+    <h3>Repositórios Remotos</h3>
+    <pre><code># Adicionar origem
+git remote add origin URL
+
+# Enviar alterações
+git push -u origin main
+
+# Atualizar local
+git pull origin main
+
+# Ver remotos
+git remote -v</code></pre>
+</section>
+
+<!-- Seção Adicionada: Desfazendo Alterações -->
+<section class="content-section">
+    <h3>Corrigindo Erros</h3>
+    <div class="code-comparison">
+        <div>
+            <h4>Antes do Commit</h4>
+            <pre><code>git checkout -- arquivo.txt
+git reset HEAD arquivo.txt</code></pre>
+        </div>
+        <div>
+            <h4>Após Commit</h4>
+            <pre><code>git commit --amend
+git revert HEAD
+git reset --hard HASH</code></pre>
+        </div>
+    </div>
+</section>
+
+            <section class="content-section">
+                <h3>Rebase vs Merge</h3>
+                <div class="code-comparison">
+                    <div>
+                        <h4>Merge</h4>
+                        <pre><code>git checkout main
+git merge feature-branch</code></pre>
+                    </div>
+                    <div>
+                        <h4>Rebase</h4>
+                        <pre><code>git checkout feature-branch
+git rebase main</code></pre>
+                    </div>
+                </div>
+                <div class="best-practice">
+                    <strong>Dica:</strong> Use rebase para manter histórico linear, merge para preservar contexto
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Git Hooks</h3>
+                <pre><code>#!/bin/sh
+# .git/hooks/pre-commit
+npm test
+if [ $? -ne 0 ]; then
+    echo "Testes falharam! Commit abortado."
+    exit 1
+fi</code></pre>
+                <p>Scripts executados em eventos específicos do Git</p>
+            </section>
+
+            <section class="content-section">
+                <h3>Stash Seletivo</h3>
+                <pre><code>git stash push -p -m "Meu stash"
+# Interativamente seleciona mudanças para stash</code></pre>
+                <ul>
+                    <li>-p: modo interativo</li>
+                    <li>-m: mensagem descritiva</li>
+                    <li>Útil para separar alterações não relacionadas</li>
+                </ul>
+            </section>
+       
+                                    
+            <div class="playlist-section">
+                <h2>🎬 Playlist Git</h2>
+                <div class="video-container">
+                    <a href="https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&si=LHXTqWgMvdUDl9Od" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="video-link">
+                        <img src="https://img.youtube.com/vi/xEKo29OWILE/hqdefault.jpg" 
+                             alt="Curso Node.js" 
+                             class="video-cover">
+                        <div class="play-button"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Créditos! -->
+            <div class="playlist-credits">
+                <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+                <small>
+                    Direitos autorais © 2013-2023 Curso em Vídeo<br>
+                    Playlist oficial disponível em 
+                    <a href="https://www.cursoemvideo.com/curso/curso-de-git/" target="_blank" rel="noopener">
+                        Curso de Git - Curso em Vídeo
+                    </a>
+                </small>
+            </div>
+        </div>
             </section>
         </main>
     </div>

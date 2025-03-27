@@ -81,230 +81,230 @@
                     <div id="html-content" class="study-section">
                     
                                     <div class="study-section">
-                                        <h3>Domine HTML5 - Iniciante</h3>
+<h3>Domine HTML5 - Iniciante</h3>
                         
-                                        <section class="content-section">
-                                            <h3>O que é HTML?</h3>
-                                            <p>HTML (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) é a linguagem base para construção de páginas web. Não é uma linguagem de programação, mas sim de <strong>marcação</strong> que define a estrutura e o significado do conteúdo.</p>
-                                            
-                                            <div class="best-practice">
-                                                <strong>Principais Características:</strong>
-                                                <ul>
-                                                    <li>Utiliza tags envolvidas por &lt; &gt;</li>
-                                                    <li>Hierárquica (elementos pai e filhos)</li>
-                                                    <li>Semântica (significado do conteúdo)</li>
-                                                    <li>Independente de plataforma</li>
-                                                </ul>
-                                            </div>
-                                        </section>
-                                        <section class="content-section">
-                                            <h3>Tags Essenciais para Iniciantes</h3>
-                                            <div class="tags-grid">
-                                                <div class="tag-item">
-                                                    <code>&lt;h1&gt; a &lt;h6&gt;</code>
-                                                    <p>Títulos hierárquicos<br><em>Importante: Use apenas um H1 por página</em></p>
-                                                </div>
-                                                <div class="tag-item">
-                                                    <code>&lt;p&gt;</code>
-                                                    <p>Parágrafos de texto</p>
-                                                </div>
-                                                <div class="tag-item">
-                                                    <code>&lt;a href="..."&gt;</code>
-                                                    <p>Links de navegação<br><em>Atributo href define o destino</em></p>
-                                                </div>
-                                                <div class="tag-item">
-                                                    <code>&lt;img src="..." alt="..."&gt;</code>
-                                                    <p>Inserir imagens<br><strong>Dica:</strong> Sempre use alt para acessibilidade</p>
-                                                </div>
-                                                <div class="tag-item">
-                                                    <code>&lt;ul&gt; e &lt;ol&gt;</code>
-                                                    <p>Listas não ordenadas e ordenadas<br><em>Com itens &lt;li&gt;</em></p>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Inserindo Multimídia</h3>
-                                            <pre><code>&lt;!-- Imagem --&gt;
-                                        &lt;img src="caminho/da/imagem.jpg" 
-                                             alt="Descrição acessível" 
-                                             width="600" 
-                                             height="400"&gt;
-                                        
-                                        &lt;!-- Vídeo com controles --&gt;
-                                        &lt;video controls width="600"&gt;
-                                            &lt;source src="video.mp4" type="video/mp4"&gt;
-                                            Seu navegador não suporta vídeos HTML5
-                                        &lt;/video&gt;
-                                        
-                                        &lt;!-- Áudio --&gt;
-                                        &lt;audio controls&gt;
-                                            &lt;source src="audio.ogg" type="audio/ogg"&gt;
-                                        &lt;/audio&gt;</code></pre>
-                                            
-                                            <div class="best-practice">
-                                                <strong>Boas Práticas:</strong>
-                                                <ul>
-                                                    <li>Sempre inclua textos alternativos (alt)</li>
-                                                    <li>Use formatos compatíveis (MP4, WebM, OGG)</li>
-                                                    <li>Defina dimensões para evitar layout shift</li>
-                                                </ul>
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Atributos Importantes</h3>
-                                            <table class="attributes-table">
-                                                <tr>
-                                                    <th>Atributo</th>
-                                                    <th>Uso</th>
-                                                    <th>Exemplo</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>id</td>
-                                                    <td>Identificador único</td>
-                                                    <td>&lt;div id="header"&gt;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>class</td>
-                                                    <td>Classificação para CSS/JS</td>
-                                                    <td>&lt;p class="destaque"&gt;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>style</td>
-                                                    <td>CSS inline (evitar)</td>
-                                                    <td>&lt;span style="color:red"&gt;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>data-*</td>
-                                                    <td>Armazenar dados customizados</td>
-                                                    <td>&lt;div data-usuario="123"&gt;</td>
-                                                </tr>
-                                            </table>
-                                        </section>
-                            
-                                            <h3>Estrutura Básica</h3>
-                                            <pre><code>&lt;!DOCTYPE html&gt;
-                                        &lt;html lang="pt-BR"&gt;
-                                        &lt;head&gt;
-                                            &lt;meta charset="UTF-8"&gt;
-                                            &lt;title&gt;Documento HTML5&lt;/title&gt;
-                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                                        &lt;/head&gt;
-                                        &lt;body&gt;
-                                            &lt;header&gt;...&lt;/header&gt;
-                                            &lt;main&gt;...&lt;/main&gt;
-                                            &lt;footer&gt;...&lt;/footer&gt;
-                                        &lt;/body&gt;
-                                        &lt;/html&gt;</code></pre>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Elementos Semânticos</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Elementos Tradicionais</h4>
-                                                    <pre><code>&lt;div id="header"&gt;
-                                        &lt;div class="nav"&gt;
-                                        &lt;div class="main-content"&gt;</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>HTML5 Semântico</h4>
-                                                    <pre><code>&lt;header&gt;
-                                        &lt;nav&gt;
-                                        &lt;main&gt;</code></pre>
-                                                </div>
-                                            </div>
-                                            <div class="best-practice">
-                                                <strong>Vantagens:</strong> Melhoria na acessibilidade, SEO e manutenibilidade
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Novos Elementos</h3>
-                                            <ul>
-                                                <li>&lt;section&gt; - Agrupa conteúdo relacionado</li>
-                                                <li>&lt;article&gt; - Conteúdo independente (posts, artigos)</li>
-                                                <li>&lt;aside&gt; - Conteúdo secundário/sidebar</li>
-                                                <li>&lt;figure&gt; e &lt;figcaption&gt; - Imagens com legenda</li>
-                                                <li>&lt;time&gt; - Representa datas/horários</li>
-                                            </ul>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Formulários Avançados</h3>
-                                            <pre><code>&lt;input type="email" required&gt;
-                                        &lt;input type="date" min="2024-01-01" max="2024-12-31"&gt;
-                                        &lt;input type="range" min="0" max="100" step="5"&gt;</code></pre>
-                                            <div class="best-practice">
-                                                <strong>Novos Tipos:</strong> email, url, tel, search, number, range, color, date
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Acessibilidade</h3>
-                                            <pre><code>&lt;nav aria-label="Menu principal"&gt;
-                                        &lt;img src="logo.png" alt="Logo da empresa"&gt;
-                                        &lt;button aria-expanded="false"&gt;Menu&lt;/button&gt;</code></pre>
-                                            <ul>
-                                                <li>Atributo <strong>role</strong> define a função do elemento</li>
-                                                <li>Atributo <strong>tabindex</strong> controla a navegação por tab</li>
-                                            </ul>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Multimídia</h3>
-                                            <pre><code>&lt;video controls&gt;
-                                            &lt;source src="video.mp4" type="video/mp4"&gt;
-                                            Seu navegador não suporta vídeo HTML5
-                                        &lt;/video&gt;
-                                        
-                                        &lt;audio controls&gt;
-                                            &lt;source src="audio.ogg" type="audio/ogg"&gt;
-                                        &lt;/audio&gt;</code></pre>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Armazenamento</h3>
-                                            <pre><code>// Local Storage
-                                        localStorage.setItem('chave', 'valor');
-                                        const valor = localStorage.getItem('chave');
-                                        
-                                        // Session Storage
-                                        sessionStorage.setItem('sessao', 'dados');</code></pre>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>APIs HTML5</h3>
-                                            <ul>
-                                                <li>Geolocation - Acesso à localização</li>
-                                                <li>Drag and Drop - Arrastar e soltar elementos</li>
-                                                <li>Web Workers - Processamento em segundo plano</li>
-                                                <li>WebSocket - Comunicação bidirecional</li>
-                                            </ul>
-                                        </section>
-                                     
-                                        <div class="playlist-section">
-                                            <h2>🎬 Playlist HTML5</h2>
-                                            <div class="playlist-embed">
-                                                <iframe 
-                                                    src="https://www.youtube.com/embed/videoseries?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" 
-                                                    frameborder="0" 
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                                    allowfullscreen>
-                                                </iframe>
-                                            </div>
-                                        </div>
+<section class="content-section">
+    <h3>O que é HTML?</h3>
+    <p>HTML (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) é a linguagem base para construção de páginas web. Não é uma linguagem de programação, mas sim de <strong>marcação</strong> que define a estrutura e o significado do conteúdo.</p>
+    
+    <div class="best-practice">
+        <strong>Principais Características:</strong>
+        <ul>
+            <li>Utiliza tags envolvidas por &lt; &gt;</li>
+            <li>Hierárquica (elementos pai e filhos)</li>
+            <li>Semântica (significado do conteúdo)</li>
+            <li>Independente de plataforma</li>
+        </ul>
+    </div>
+</section>
+<section class="content-section">
+    <h3>Tags Essenciais para Iniciantes</h3>
+    <div class="tags-grid">
+        <div class="tag-item">
+            <code>&lt;h1&gt; a &lt;h6&gt;</code>
+            <p>Títulos hierárquicos<br><em>Importante: Use apenas um H1 por página</em></p>
+        </div>
+        <div class="tag-item">
+            <code>&lt;p&gt;</code>
+            <p>Parágrafos de texto</p>
+        </div>
+        <div class="tag-item">
+            <code>&lt;a href="..."&gt;</code>
+            <p>Links de navegação<br><em>Atributo href define o destino</em></p>
+        </div>
+        <div class="tag-item">
+            <code>&lt;img src="..." alt="..."&gt;</code>
+            <p>Inserir imagens<br><strong>Dica:</strong> Sempre use alt para acessibilidade</p>
+        </div>
+        <div class="tag-item">
+            <code>&lt;ul&gt; e &lt;ol&gt;</code>
+            <p>Listas não ordenadas e ordenadas<br><em>Com itens &lt;li&gt;</em></p>
+        </div>
+    </div>
+</section>
 
-                                        <!-- Créditos! -->
-                                        <div class="playlist-credits">
-                                            <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
-                                            <small>
-                                                Direitos autorais © 2013-2023 Curso em Vídeo<br>
-                                                Esta apresentação contém trechos da playlist oficial disponível em 
-                                                <a href="https://www.cursoemvideo.com/curso/html5/" target="_blank" rel="noopener"> Curso de HTML5 - Curso em Vídeo</a>
-                                            </small>
-                                        </div>
+<section class="content-section">
+    <h3>Inserindo Multimídia</h3>
+    <pre><code>&lt;!-- Imagem --&gt;
+&lt;img src="caminho/da/imagem.jpg" 
+     alt="Descrição acessível" 
+     width="600" 
+     height="400"&gt;
+
+&lt;!-- Vídeo com controles --&gt;
+&lt;video controls width="600"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Seu navegador não suporta vídeos HTML5
+&lt;/video&gt;
+
+&lt;!-- Áudio --&gt;
+&lt;audio controls&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;</code></pre>
+    
+    <div class="best-practice">
+        <strong>Boas Práticas:</strong>
+        <ul>
+            <li>Sempre inclua textos alternativos (alt)</li>
+            <li>Use formatos compatíveis (MP4, WebM, OGG)</li>
+            <li>Defina dimensões para evitar layout shift</li>
+        </ul>
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>Atributos Importantes</h3>
+    <table class="attributes-table">
+        <tr>
+            <th>Atributo</th>
+            <th>Uso</th>
+            <th>Exemplo</th>
+        </tr>
+        <tr>
+            <td>id</td>
+            <td>Identificador único</td>
+            <td>&lt;div id="header"&gt;</td>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>Classificação para CSS/JS</td>
+            <td>&lt;p class="destaque"&gt;</td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td>CSS inline (evitar)</td>
+            <td>&lt;span style="color:red"&gt;</td>
+        </tr>
+        <tr>
+            <td>data-*</td>
+            <td>Armazenar dados customizados</td>
+            <td>&lt;div data-usuario="123"&gt;</td>
+        </tr>
+    </table>
+</section>
+                            
+    <h3>Estrutura Básica</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Documento HTML5&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;main&gt;...&lt;/main&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+
+<section class="content-section">
+    <h3>Elementos Semânticos</h3>
+    <div class="code-comparison">
+        <div>
+            <h4>Elementos Tradicionais</h4>
+            <pre><code>&lt;div id="header"&gt;
+&lt;div class="nav"&gt;
+&lt;div class="main-content"&gt;</code></pre>
+        </div>
+        <div>
+            <h4>HTML5 Semântico</h4>
+            <pre><code>&lt;header&gt;
+&lt;nav&gt;
+&lt;main&gt;</code></pre>
+        </div>
+    </div>
+    <div class="best-practice">
+        <strong>Vantagens:</strong> Melhoria na acessibilidade, SEO e manutenibilidade
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>Novos Elementos</h3>
+    <ul>
+        <li>&lt;section&gt; - Agrupa conteúdo relacionado</li>
+        <li>&lt;article&gt; - Conteúdo independente (posts, artigos)</li>
+        <li>&lt;aside&gt; - Conteúdo secundário/sidebar</li>
+        <li>&lt;figure&gt; e &lt;figcaption&gt; - Imagens com legenda</li>
+        <li>&lt;time&gt; - Representa datas/horários</li>
+    </ul>
+</section>
+
+<section class="content-section">
+    <h3>Formulários Avançados</h3>
+    <pre><code>&lt;input type="email" required&gt;
+&lt;input type="date" min="2024-01-01" max="2024-12-31"&gt;
+&lt;input type="range" min="0" max="100" step="5"&gt;</code></pre>
+    <div class="best-practice">
+        <strong>Novos Tipos:</strong> email, url, tel, search, number, range, color, date
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>Acessibilidade</h3>
+    <pre><code>&lt;nav aria-label="Menu principal"&gt;
+&lt;img src="logo.png" alt="Logo da empresa"&gt;
+&lt;button aria-expanded="false"&gt;Menu&lt;/button&gt;</code></pre>
+    <ul>
+        <li>Atributo <strong>role</strong> define a função do elemento</li>
+        <li>Atributo <strong>tabindex</strong> controla a navegação por tab</li>
+    </ul>
+</section>
+
+<section class="content-section">
+    <h3>Multimídia</h3>
+    <pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Seu navegador não suporta vídeo HTML5
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;</code></pre>
+</section>
+
+<section class="content-section">
+    <h3>Armazenamento</h3>
+    <pre><code>// Local Storage
+localStorage.setItem('chave', 'valor');
+const valor = localStorage.getItem('chave');
+
+// Session Storage
+sessionStorage.setItem('sessao', 'dados');</code></pre>
+</section>
+
+<section class="content-section">
+    <h3>APIs HTML5</h3>
+    <ul>
+        <li>Geolocation - Acesso à localização</li>
+        <li>Drag and Drop - Arrastar e soltar elementos</li>
+        <li>Web Workers - Processamento em segundo plano</li>
+        <li>WebSocket - Comunicação bidirecional</li>
+    </ul>
+</section>
+                                     
+<div class="playlist-section">
+    <h2>🎬 Playlist HTML5</h2>
+    <div class="playlist-embed">
+        <iframe 
+            src="https://www.youtube.com/embed/videoseries?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<!-- Créditos! -->
+<div class="playlist-credits">
+    <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+    <small>
+        Direitos autorais © 2013-2023 Curso em Vídeo<br>
+        Esta apresentação contém trechos da playlist oficial disponível em 
+        <a href="https://www.cursoemvideo.com/curso/html5/" target="_blank" rel="noopener"> Curso de HTML5 - Curso em Vídeo</a>
+    </small>
+</div>
                                     </div>
             </section>
         </main>

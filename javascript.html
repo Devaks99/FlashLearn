@@ -79,323 +79,323 @@
                     <div id="html-content" class="study-section">
                     
                                     <div class="study-section">
-                                        <h3>Domine JavaScript - Iniciante</h3>
+<h3>Domine JavaScript - Iniciante</h3>
                         
-                                        <section class="content-section">
-                                            <h3>Tipos de Dados</h3>
-                                            <pre><code>// Primitivos
-                                        let nome = "João";    // String
-                                        let idade = 30;       // Number
-                                        let ativo = true;     // Boolean
-                                        let valor;            // Undefined
-                                        let nulavel = null;   // Null
-                                        
-                                        // Complexos
-                                        let pessoa = {        // Object
-                                        nome: "Maria",
-                                        idade: 25
-                                        };
-                                        let numeros = [1, 2, 3]; // Array</code></pre>
-                                            <div class="best-practice">
-                                                <strong>Dica:</strong> Use typeof para verificar tipos de variáveis
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Estruturas Condicionais</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>if/else</h4>
-                                                    <pre><code>if (idade >= 18) {
-                                        console.log("Maior de idade");
-                                        } else {
-                                        console.log("Menor de idade");
-                                        }</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>switch</h4>
-                                                    <pre><code>switch(diaSemana) {
-                                        case 1:
-                                        console.log("Segunda");
-                                        break;
-                                        default:
-                                        console.log("Fim de semana");
-                                        }</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Funções -->
-                                        <section class="content-section">
-                                        <h3>Funções Essenciais</h3>
-                                        <div class="code-comparison">
-                                        <div>
-                                            <h4>Declaração</h4>
-                                            <pre><code>// Function Declaration
-                                        function soma(a, b) {
-                                        return a + b;
-                                        }
-                                        
-                                        // Function Expression
-                                        const subtracao = function(a, b) {
-                                        return a - b;
-                                        }
-                                        
-                                        // Arrow Function (ES6+)
-                                        const multiplicacao = (a, b) => a * b;
-                                        
-                                        // IIFE (Auto-executável)
-                                        (function() {
-                                        console.log('Executado imediatamente!');
-                                        })();</code></pre>
-                                        </div>
-                                        <div>
-                                            <h4>Uso Prático</h4>
-                                            <pre><code>// Parâmetros padrão
-                                        function saudacao(nome = 'Visitante') {
-                                        return `Olá ${nome}!`;
-                                        }
-                                        
-                                        // Função como argumento
-                                        numeros.forEach(function(num) {
-                                        console.log(num * 2);
-                                        });
-                                        
-                                        // Retorno de função
-                                        function criarMultiplicador(x) {
-                                        return function(y) {
-                                        return x * y;
-                                        };
-                                        }
-                                        const dobrar = criarMultiplicador(2);
-                                        console.log(dobrar(5)); // 10</code></pre>
-                                        </div>
-                                        </div>
-                                        <div class="best-practice">
-                                        <strong>Dica:</strong> Prefira arrow functions para callbacks e funções curtas
-                                        </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Manipulação de Arrays -->
-                                        <section class="content-section">
-                                        <h3>Métodos de Array</h3>
-                                        <div class="code-comparison">
-                                        <div>
-                                            <h4>Transformação</h4>
-                                            <pre><code>const numeros = [1, 2, 3];
-                                        
-                                        // Map: transforma elementos
-                                        const dobrados = numeros.map(n => n * 2);
-                                        
-                                        // Filter: filtra elementos
-                                        const pares = numeros.filter(n => n % 2 === 0);
-                                        
-                                        // Reduce: reduz a array
-                                        const soma = numeros.reduce((acc, n) => acc + n, 0);</code></pre>
-                                        </div>
-                                        <div>
-                                            <h4>Iteração</h4>
-                                            <pre><code>// forEach: executa função para cada item
-                                        numeros.forEach(n => console.log(n));
-                                        
-                                        // Find: encontra primeiro elemento
-                                        const primeiroPar = numeros.find(n => n % 2 === 0);
-                                        
-                                        // Some/Every: testa elementos
-                                        const temPar = numeros.some(n => n % 2 === 0);
-                                        const todosPares = numeros.every(n => n % 2 === 0);</code></pre>
-                                        </div>
-                                        </div>
-                                        <div class="best-practice">
-                                        <strong>Melhor Prática:</strong> Use métodos funcionais (map/filter/reduce) para manipular arrays
-                                        </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Eventos e DOM -->
-                                        <section class="content-section">
-                                        <h3>Manipulação do DOM</h3>
-                                        <div class="code-comparison">
-                                        <div>
-                                            <h4>Seleção de Elementos</h4>
-                                            <pre><code>// Seleção clássica
-                                        const elemento = document.getElementById('meuId');
-                                        const elementos = document.querySelectorAll('.classe');
-                                        
-                                        // Criação
-                                        const novoElemento = document.createElement('div');
-                                        
-                                        // Modificação
-                                        elemento.textContent = 'Novo texto';
-                                        elemento.style.color = 'red';
-                                        elemento.classList.add('ativo');</code></pre>
-                                        </div>
-                                        <div>
-                                            <h4>Eventos</h4>
-                                            <pre><code>// Adicionar evento
-                                        botao.addEventListener('click', function(event) {
-                                        console.log('Botão clicado!', event.target);
-                                        });
-                                        
-                                        // Eventos comuns:
-                                        // - click
-                                        // - mouseover/mouseout
-                                        // - keydown/keyup
-                                        // - submit
-                                        // - load</code></pre>
-                                        </div>
-                                        </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Assincronicidade -->
-                                        <section class="content-section">
-                                        <h3>Operações Assíncronas</h3>
-                                        <div class="code-comparison">
-                                        <div>
-                                            <h4>Callbacks e Promises</h4>
-                                            <pre><code>// setTimeout (callback)
-                                        setTimeout(() => {
-                                        console.log('Executado após 1s');
-                                        }, 1000);
-                                        
-                                        // Promise
-                                        fetch('https://api.exemplo.com/dados')
-                                        .then(response => response.json())
-                                        .then(data => console.log(data))
-                                        .catch(error => console.error(error));</code></pre>
-                                        </div>
-                                        <div>
-                                            <h4>Async/Await</h4>
-                                            <pre><code>// Função assíncrona
-                                        async function buscarDados() {
-                                        try {
-                                        const response = await fetch('https://api.exemplo.com/dados');
-                                        const data = await response.json();
-                                        return data;
-                                        } catch (error) {
-                                        console.error('Falha na requisição:', error);
-                                        }
-                                        }</code></pre>
-                                        </div>
-                                        </div>
-                                        <div class="best-practice">
-                                        <strong>Importante:</strong> Sempre trate erros em operações assíncronas
-                                        </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Boas Práticas -->
-                                        <section class="content-section">
-                                        <h3>Padrões Recomendados</h3>
-                                        <div class="best-practice mega-tip">
-                                        <strong>🌟 Guia de Sobrevivência JS:</strong>
-                                        <ol>
-                                            <li>Use <code>const</code> por padrão e <code>let</code> apenas quando necessário</li>
-                                            <li>Prefira === em vez de == para comparações</li>
-                                            <li>Evite variáveis globais</li>
-                                            <li>Use template strings para concatenação</li>
-                                            <li>Modularize seu código em funções</li>
-                                            <li>Nomeie variáveis/funções de forma descritiva</li>
-                                        </ol>
-                                        </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Loops e Iteração</h3>
-                                            <pre><code>// For tradicional
-                                        for (let i = 0; i < 5; i++) {
-                                        console.log(i);
-                                        }
-                                        
-                                        // While
-                                        let contador = 0;
-                                        while (contador < 5) {
-                                        console.log(contador);
-                                        contador++;
-                                        }
-                                        
-                                        // for...of (arrays)
-                                        const frutas = ['maçã', 'banana'];
-                                        for (const fruta of frutas) {
-                                        console.log(fruta);
-                                        }</code></pre>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Manipulação de Objetos</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Criação</h4>
-                                                    <pre><code>const carro = {
-                                        marca: 'Ford',
-                                        ano: 2020,
-                                        buzinar() {
-                                        return 'Biiii!';
-                                        }
-                                        };</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>Acesso</h4>
-                                                    <pre><code>console.log(carro.marca); // Ford
-                                        console.log(carro['ano']); // 2020
-                                        console.log(carro.buzinar()); // Biiii!</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Métodos de String</h3>
-                                            <pre><code>const texto = " JavaScript é incrível! ";
-                                        
-                                        // Métodos comuns
-                                        console.log(texto.trim());        // "JavaScript é incrível!"
-                                        console.log(texto.toUpperCase()); // " JAVASCRIPT É INCRÍVEL! "
-                                        console.log(texto.includes("é")); // true
-                                        console.log(texto.slice(1, 4));   // "ava"
-                                        console.log(texto.split(" "));    // ["", "JavaScript", "é", "incrível!", ""]</code></pre>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>Tratamento de Erros</h3>
-                                            <pre><code>try {
-                                        // Código que pode gerar erro
-                                        const resultado = 10 / 0;
-                                        if (!isFinite(resultado)) {
-                                        throw new Error("Divisão por zero!");
-                                        }
-                                        } catch (erro) {
-                                        console.error("Ocorreu um erro:", erro.message);
-                                        } finally {
-                                        console.log("Execução finalizada");
-                                        }</code></pre>
-                                            <div class="best-practice">
-                                                <strong>Dica:</strong> Sempre trate erros em operações críticas
-                                            </div>
-                                        </section>
-                                               
-                                    
-                                        <div class="playlist-section">
-                                            <h2>🎬 Playlist JavaScript </h2>
-                                            <div class="video-container">
-                                                <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" 
-                                                   target="_blank" 
-                                                   rel="noopener noreferrer"
-                                                   class="video-link">
-                                                    <img src="https://img.youtube.com/vi/BXqUH86F-kA/hqdefault.jpg" 
-                                                         alt="Curso JavaScript" 
-                                                         class="video-cover">
-                                                    <div class="play-button"></div>
-                                                </a>
-                                            </div>
-                                        </div>
+<section class="content-section">
+    
+    <pre><h3>Tipos de Dados</h3><code>// Primitivos
+let nome = "João";    // String
+let idade = 30;       // Number
+let ativo = true;     // Boolean
+let valor;            // Undefined
+let nulavel = null;   // Null
 
-                                        <!-- Créditos! -->
-                                        <div class="playlist-credits">
-                                            <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
-                                            <small>
-                                                Direitos autorais © 2013-2023 Curso em Vídeo<br>
-                                                Esta apresentação contém trechos da playlist oficial disponível em 
-                                                <a href="https://www.cursoemvideo.com/curso/javascript/" target="_blank" rel="noopener"> Curso de Javascript - Curso em Vídeo</a>
-                                            </small>
-                                        </div>
+// Complexos
+let pessoa = {        // Object
+nome: "Maria",
+idade: 25
+};
+let numeros = [1, 2, 3]; // Array</code></pre>
+    <div class="best-practice">
+        <strong>Dica:</strong> Use typeof para verificar tipos de variáveis
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>Estruturas Condicionais</h3>
+    <div class="code-comparison">
+        <div>
+            
+            <pre><h4>if/else</h4><code>if (idade >= 18) {
+console.log("Maior de idade");
+} else {
+console.log("Menor de idade");
+}</code></pre>
+        </div>
+        <div>
+           <br>
+            <pre><h4>switch</h4><code>switch(diaSemana) {
+case 1:
+console.log("Segunda");
+break;
+default:
+console.log("Fim de semana");
+}</code></pre>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Adicionada: Funções -->
+<section class="content-section">
+<h3>Funções Essenciais</h3>
+<div class="code-comparison">
+<div>
+    <br>
+    <pre><h4>Declaração</h4><code>// Function Declaration
+function soma(a, b) {
+return a + b;
+}
+
+// Function Expression
+const subtracao = function(a, b) {
+return a - b;
+}
+
+// Arrow Function (ES6+)
+const multiplicacao = (a, b) => a * b;
+
+// IIFE (Auto-executável)
+(function() {
+console.log('Executado imediatamente!');
+})();</code></pre>
+</div>
+<div>
+   <br>
+    <pre><h4>Uso Prático</h4><code>// Parâmetros padrão
+function saudacao(nome = 'Visitante') {
+return `Olá ${nome}!`;
+}
+
+// Função como argumento
+numeros.forEach(function(num) {
+console.log(num * 2);
+});
+
+// Retorno de função
+function criarMultiplicador(x) {
+return function(y) {
+return x * y;
+};
+}
+const dobrar = criarMultiplicador(2);
+console.log(dobrar(5)); // 10</code></pre>
+</div>
+</div>
+<div class="best-practice">
+<strong>Dica:</strong> Prefira arrow functions para callbacks e funções curtas
+</div>
+</section>
+
+<!-- Seção Adicionada: Manipulação de Arrays -->
+<section class="content-section">
+<h3>Métodos de Array</h3>
+<div class="code-comparison">
+<div>
+    <br>
+    <pre><h4>Transformação</h4><code>const numeros = [1, 2, 3];
+
+// Map: transforma elementos
+const dobrados = numeros.map(n => n * 2);
+
+// Filter: filtra elementos
+const pares = numeros.filter(n => n % 2 === 0);
+
+// Reduce: reduz a array
+const soma = numeros.reduce((acc, n) => acc + n, 0);</code></pre>
+</div>
+<div>
+    <br>
+    <pre><h4>Iteração</h4><code>// forEach: executa função para cada item
+numeros.forEach(n => console.log(n));
+
+// Find: encontra primeiro elemento
+const primeiroPar = numeros.find(n => n % 2 === 0);
+
+// Some/Every: testa elementos
+const temPar = numeros.some(n => n % 2 === 0);
+const todosPares = numeros.every(n => n % 2 === 0);</code></pre>
+</div>
+</div>
+<div class="best-practice">
+<strong>Melhor Prática:</strong> Use métodos funcionais (map/filter/reduce) para manipular arrays
+</div>
+</section>
+
+<!-- Seção Adicionada: Eventos e DOM -->
+<section class="content-section">
+<h3>Manipulação do DOM</h3>
+<div class="code-comparison">
+<div>
+    <br>
+    <pre><h4>Seleção de Elementos</h4><code>// Seleção clássica
+const elemento = document.getElementById('meuId');
+const elementos = document.querySelectorAll('.classe');
+
+// Criação
+const novoElemento = document.createElement('div');
+
+// Modificação
+elemento.textContent = 'Novo texto';
+elemento.style.color = 'red';
+elemento.classList.add('ativo');</code></pre>
+</div>
+<div>
+    <br>
+    <pre><h4>Eventos</h4><code>// Adicionar evento
+botao.addEventListener('click', function(event) {
+console.log('Botão clicado!', event.target);
+});
+
+// Eventos comuns:
+// - click
+// - mouseover/mouseout
+// - keydown/keyup
+// - submit
+// - load</code></pre>
+</div>
+</div>
+</section>
+
+<!-- Seção Adicionada: Assincronicidade -->
+<section class="content-section">
+<h3>Operações Assíncronas</h3>
+<div class="code-comparison">
+<div>
+    <br>
+    <pre><h4>Callbacks e Promises</h4><code>// setTimeout (callback)
+setTimeout(() => {
+console.log('Executado após 1s');
+}, 1000);
+
+// Promise
+fetch('https://api.exemplo.com/dados')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));</code></pre>
+</div>
+<div>
+    <br>
+    <pre><h4>Async/Await</h4><code>// Função assíncrona
+async function buscarDados() {
+try {
+const response = await fetch('https://api.exemplo.com/dados');
+const data = await response.json();
+return data;
+} catch (error) {
+console.error('Falha na requisição:', error);
+}
+}</code></pre>
+</div>
+</div>
+<div class="best-practice">
+<strong>Importante:</strong> Sempre trate erros em operações assíncronas
+</div>
+</section>
+
+<!-- Seção Adicionada: Boas Práticas -->
+<section class="content-section">
+<h3>Padrões Recomendados</h3>
+<div class="best-practice mega-tip">
+<strong>🌟 Guia de Sobrevivência JS:</strong>
+<ol>
+    <li>Use <code>const</code> por padrão e <code>let</code> apenas quando necessário</li>
+    <li>Prefira === em vez de == para comparações</li>
+    <li>Evite variáveis globais</li>
+    <li>Use template strings para concatenação</li>
+    <li>Modularize seu código em funções</li>
+    <li>Nomeie variáveis/funções de forma descritiva</li>
+</ol>
+</div>
+</section>
+
+<section class="content-section">
+    
+    <pre><h3>Loops e Iteração</h3><code>// For tradicional
+for (let i = 0; i < 5; i++) {
+console.log(i);
+}
+
+// While
+let contador = 0;
+while (contador < 5) {
+console.log(contador);
+contador++;
+}
+
+// for...of (arrays)
+const frutas = ['maçã', 'banana'];
+for (const fruta of frutas) {
+console.log(fruta);
+}</code></pre>
+</section>
+
+<section class="content-section">
+    <h3>Manipulação de Objetos</h3>
+    <div class="code-comparison">
+        <div>
+            <br>
+            <pre><h4>Criação</h4><code>const carro = {
+marca: 'Ford',
+ano: 2020,
+buzinar() {
+return 'Biiii!';
+}
+};</code></pre>
+        </div>
+        <div>
+            <br>
+            <pre><h4>Acesso</h4><code>console.log(carro.marca); // Ford
+console.log(carro['ano']); // 2020
+console.log(carro.buzinar()); // Biiii!</code></pre>
+        </div>
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>Métodos de String</h3>
+    <pre><code>const texto = " JavaScript é incrível! ";
+
+// Métodos comuns
+console.log(texto.trim());        // "JavaScript é incrível!"
+console.log(texto.toUpperCase()); // " JAVASCRIPT É INCRÍVEL! "
+console.log(texto.includes("é")); // true
+console.log(texto.slice(1, 4));   // "ava"
+console.log(texto.split(" "));    // ["", "JavaScript", "é", "incrível!", ""]</code></pre>
+</section>
+
+<section class="content-section">
+    <h3>Tratamento de Erros</h3>
+    <pre><code>try {
+// Código que pode gerar erro
+const resultado = 10 / 0;
+if (!isFinite(resultado)) {
+throw new Error("Divisão por zero!");
+}
+} catch (erro) {
+console.error("Ocorreu um erro:", erro.message);
+} finally {
+console.log("Execução finalizada");
+}</code></pre>
+    <div class="best-practice">
+        <strong>Dica:</strong> Sempre trate erros em operações críticas
+    </div>
+</section>
+       
+                                    
+<div class="playlist-section">
+    <h2>🎬 Playlist JavaScript </h2>
+    <div class="video-container">
+        <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="video-link">
+            <img src="https://img.youtube.com/vi/BXqUH86F-kA/hqdefault.jpg" 
+                 alt="Curso JavaScript" 
+                 class="video-cover">
+            <div class="play-button"></div>
+        </a>
+    </div>
+</div>
+
+<!-- Créditos! -->
+<div class="playlist-credits">
+    <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+    <small>
+        Direitos autorais © 2013-2023 Curso em Vídeo<br>
+        Esta apresentação contém trechos da playlist oficial disponível em 
+        <a href="https://www.cursoemvideo.com/curso/javascript/" target="_blank" rel="noopener"> Curso de Javascript - Curso em Vídeo</a>
+    </small>
+</div>
                                     </div>
             </section>
         </main>

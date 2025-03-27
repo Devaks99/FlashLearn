@@ -78,252 +78,252 @@
                     <h2>📚 Conteúdo Educacional</h2>
                     <div id="html-content" class="study-section">
                     
-                                    <div class="study-section">
-                                        <h3>Domine NodeJS - Iniciante</h3>
+    <div class="study-section">
+        <h3>Domine NodeJS - Iniciante</h3>
                         
-                                        <section class="content-section">
-                                            <h3>Fundamentos do Node.js</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>O que é Node.js?</h4>
-                                                  <p>
-                                                    Node.js é um ambiente de execução JavaScript baseado no motor V8 do Chrome. Ele permite rodar JavaScript no servidor, possibilitando o desenvolvimento de aplicações escaláveis ​​e de alto desempenho. Node.js é conhecido por seu modelo assíncrono e orientado a eventos, o que o torna ideal para aplicações em tempo real, como APIs, chats e streaming. Além disso, conta com o npm (Node Package Manager), que facilita a instalação e gerenciamento de bibliotecas e módulos.
-                                                  </p>
-                                                </div>
-                                                <div>
-                                                    <h4>Iniciando um Projeto</h4>
-                                                    <pre><code>// Inicializar npm
-                                npm init -y
-                                
-                                // Estrutura básica
-                                ├── node_modules/
-                                ├── package.json
-                                └── index.js</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                
-                                        <!-- Seção Adicionada: Módulos Core -->
-                                        <section class="content-section">
-                                            <h3>Módulos Principais</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>HTTP Module</h4>
-                                                    <pre><code>const http = require('http');
-                                
-                                const server = http.createServer((req, res) => {
-                                res.writeHead(200);
-                                res.end('Olá Mundo!');
-                                });
-                                
-                                server.listen(3000);</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>File System (fs)</h4>
-                                                    <pre><code>const fs = require('fs');
-                                
-                                // Ler arquivo
-                                fs.readFile('arquivo.txt', 'utf8', (err, data) => {
-                                if (err) throw err;
-                                console.log(data);
-                                });</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                
-                                        <!-- Seção Adicionada: NPM e Pacotes -->
-                                        <section class="content-section">
-                                            <h3>Gerenciamento de Pacotes</h3>
-                                            <pre><code>// package.json
-                                {
-                                "scripts": {
-                                    "start": "node index.js",
-                                    "dev": "nodemon index.js"
-                                },
-                                "dependencies": {
-                                    "express": "^4.18.2"
-                                }
-                                }</code></pre>
-                                <div class="best-practice">
-                                    <strong>Comandos Úteis:</strong>
-                                    <ul>
-                                        <li>
-                                            <h4>Gerenciamento de Projetos</h4>
-                                            <ul>
-                                                <li><code>npm init -y</code> - Inicia novo projeto Node.js</li>
-                                                <li><code>npm install</code> - Instala todas as dependências</li>
-                                                <li><code>npm install &lt;pacote&gt; --save</code> - Instala e salva como dependência</li>
-                                                <li><code>npm install -g &lt;pacote&gt;</code> - Instala globalmente</li>
-                                            </ul>
-                                        </li>
-                                        
-                                        <li>
-                                            <h4>Execução e Desenvolvimento</h4>
-                                            <ul>
-                                                <li><code>node app.js</code> - Executa arquivo JavaScript</li>
-                                                <li><code>npm run start</code> - Executa script definido</li>
-                                                <li><code>nodemon app.js</code> - Recarregamento automático</li>
-                                                <li><code>node --inspect app.js</code> - Modo debugging</li>
-                                            </ul>
-                                        </li>
-                                
-                                        <li>
-                                            <h4>Dependências e Segurança</h4>
-                                            <ul>
-                                                <li><code>npm update</code> - Atualiza todos os pacotes</li>
-                                                <li><code>npm outdated</code> - Verifica desatualizados</li>
-                                                <li><code>npm audit</code> - Verifica vulnerabilidades</li>
-                                                <li><code>npm audit fix</code> - Corrige vulnerabilidades</li>
-                                            </ul>
-                                        </li>
-                                
-                                        <li>
-                                            <h4>Utilitários Avançados</h4>
-                                            <ul>
-                                                <li><code>npx create-react-app my-app</code> - Executa pacote sem instalar</li>
-                                                <li><code>npm ci --only=production</code> - Instala para produção</li>
-                                                <li><code>killall node</code> - Para todos processos Node</li>
-                                                <li><code>NODE_ENV=production node app.js</code> - Define ambiente</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <div class="best-practice">
-                                        <strong>Dica:</strong> Use <code>&amp;&amp;</code> para múltiplos comandos:<br>
-                                        <code>npm install &amp;&amp; npm start</code>
-                                    </div>
-                                </div>
-                                        </section>
-                                
-                                        <!-- Seção Adicionada: Express Básico -->
-                                        <section class="content-section">
-                                            <h3>Criando API com Express</h3>
-                                            <pre><code>const express = require('express');
-                                const app = express();
-                                
-                                app.get('/', (req, res) => {
-                                res.json({ mensagem: "API Funcionando!" });
-                                });
-                                
-                                app.listen(3000, () => {
-                                console.log('Servidor rodando na porta 3000');
-                                });</code></pre>
-                                        </section>
-                                
-                                        <!-- Seção Adicionada: Variáveis de Ambiente -->
-                                        <section class="content-section">
-                                            <h3>Configuração de Ambiente</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>.env</h4>
-                                                    <pre><code>PORT=3000
-                                DB_HOST=localhost
-                                API_KEY=minha_chave_secreta</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>Uso no Código</h4>
-                                                    <pre><code>require('dotenv').config();
-                                
-                                const port = process.env.PORT;
-                                console.log(`Porta: ${port}`);</code></pre>
-                                                </div>
-                                            </div>
-                                        </section>
-                                
-                                            <section class="content-section">
-                                                <h3>Event Loop Architecture</h3>
-                                                <div class="code-comparison">
-                                                    <div>
-                                                        <h4>Blocking I/O</h4>
-                                                        <pre><code>const fs = require('fs');
-                                const data = fs.readFileSync('file.txt'); // Bloqueante
-                                console.log(data);</code></pre>
-                                                    </div>
-                                                    <div>
-                                                        <h4>Non-blocking I/O</h4>
-                                                        <pre><code>fs.readFile('file.txt', (err, data) => {
-                                    if (err) throw err;
-                                    console.log(data);
-                                }); // Não bloqueante</code></pre>
-                                                    </div>
-                                                </div>
-                                                <div class="best-practice">
-                                                    <strong>Melhor prática:</strong> Sempre usar operações assíncronas para I/O
-                                                </div>
-                                            </section>
-                                
-                                            <section class="content-section">
-                                                <h3>Streams e Buffer</h3>
-                                                <pre><code>const { Readable } = require('stream');
-                                
-                                class MyReadable extends Readable {
-                                    _read(size) {
-                                        // Implementação da leitura
-                                    }
-                                }
-                                
-                                const stream = new MyReadable();
-                                stream.pipe(process.stdout);</code></pre>
-                                                <ul>
-                                                    <li>Processamento de dados em tempo real</li>
-                                                    <li>Baixo consumo de memória</li>
-                                                    <li>Pipe para encadeamento de operações</li>
-                                                </ul>
-                                            </section>
-                                
-                                            <section class="content-section">
-                                                <h3>Cluster Module</h3>
-                                                <pre><code>const cluster = require('cluster');
-                                const os = require('os');
-                                
-                                if (cluster.isMaster) {
-                                    const numCPUs = os.cpus().length;
-                                    for (let i = 0; i < numCPUs; i++) {
-                                        cluster.fork();
-                                    }
-                                } else {
-                                    // Código do worker
-                                }</code></pre>
-                                                <p>Escalabilidade horizontal utilizando múltiplos processos</p>
-                                            </section>
-                                               
-                                    
-                                            <div class="playlist-section">
-                                                <h2>🎬 Playlist Nodejs</h2>
-                                                <div class="video-container">
-                                                    <a href="https://youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B&si=yaJQ7YjEhqbmO4v0" 
-                                                       target="_blank" 
-                                                       rel="noopener noreferrer"
-                                                       class="video-link">
-                                                        <img src="https://img.youtube.com/vi/LLqq6FemMNQ/hqdefault.jpg" 
-                                                             alt="Curso Node.js" 
-                                                             class="video-cover">
-                                                        <div class="play-button"></div>
-                                                    </a>
-                                                </div>
-                                            </div>
+        <section class="content-section">
+            <h3>Fundamentos do Node.js</h3>
+            <div class="code-comparison">
+                <div>
+                    <h4>O que é Node.js?</h4>
+                  <p>
+                    Node.js é um ambiente de execução JavaScript baseado no motor V8 do Chrome. Ele permite rodar JavaScript no servidor, possibilitando o desenvolvimento de aplicações escaláveis ​​e de alto desempenho. Node.js é conhecido por seu modelo assíncrono e orientado a eventos, o que o torna ideal para aplicações em tempo real, como APIs, chats e streaming. Além disso, conta com o npm (Node Package Manager), que facilita a instalação e gerenciamento de bibliotecas e módulos.
+                  </p>
+                </div>
+                <div>
+                    <br>
+                    <pre><h4>Iniciando um Projeto</h4><code>// Inicializar npm
+npm init -y
 
-                                            <!-- Créditos! -->
-                                            <div class="playlist-credits">
-                                                <strong>Curso desenvolvido por Victor Lima</strong><br>
-                                                <small>
-                                                    Conteúdo produzido sobre Ciência da Computação<br>
-                                                    Plataforma oficial: 
-                                                    <a href="https://www.cienciadacomputacao.com.br" 
-                                                       target="_blank" 
-                                                       rel="noopener">
-                                                       Guia do Programador
+// Estrutura básica
+├── node_modules/
+├── package.json
+└── index.js</code></pre>
+                </div>
+            </div>
+        </section>
 
-                                                    </a><br>
-                                                    Canal no YouTube: 
-                                                    <a href="https://www.youtube.com/@GuiadoProgramador" 
-                                                       target="_blank" 
-                                                       rel="noopener">
-                                                       @GuiadoProgramador
-                                                    </a>
-                                                </small>
-                                            </div>
-                                        </div>
-                                            
+        <!-- Seção Adicionada: Módulos Core -->
+        <section class="content-section">
+            <h3>Módulos Principais</h3>
+            <div class="code-comparison">
+                <div>
+                    <h4>HTTP Module</h4>
+                    <pre><code>const http = require('http');
+
+const server = http.createServer((req, res) => {
+res.writeHead(200);
+res.end('Olá Mundo!');
+});
+
+server.listen(3000);</code></pre>
+                </div>
+                <div>
+                    <h4>File System (fs)</h4>
+                    <pre><code>const fs = require('fs');
+
+// Ler arquivo
+fs.readFile('arquivo.txt', 'utf8', (err, data) => {
+if (err) throw err;
+console.log(data);
+});</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Adicionada: NPM e Pacotes -->
+        <section class="content-section">
+            <h3>Gerenciamento de Pacotes</h3>
+            <pre><code>// package.json
+{
+"scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+},
+"dependencies": {
+    "express": "^4.18.2"
+}
+}</code></pre>
+<div class="best-practice">
+    <strong>Comandos Úteis:</strong>
+    <ul>
+        <li>
+            <h4>Gerenciamento de Projetos</h4>
+            <ul>
+                <li><code>npm init -y</code> - Inicia novo projeto Node.js</li>
+                <li><code>npm install</code> - Instala todas as dependências</li>
+                <li><code>npm install &lt;pacote&gt; --save</code> - Instala e salva como dependência</li>
+                <li><code>npm install -g &lt;pacote&gt;</code> - Instala globalmente</li>
+            </ul>
+        </li>
+        
+        <li>
+            <h4>Execução e Desenvolvimento</h4>
+            <ul>
+                <li><code>node app.js</code> - Executa arquivo JavaScript</li>
+                <li><code>npm run start</code> - Executa script definido</li>
+                <li><code>nodemon app.js</code> - Recarregamento automático</li>
+                <li><code>node --inspect app.js</code> - Modo debugging</li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Dependências e Segurança</h4>
+            <ul>
+                <li><code>npm update</code> - Atualiza todos os pacotes</li>
+                <li><code>npm outdated</code> - Verifica desatualizados</li>
+                <li><code>npm audit</code> - Verifica vulnerabilidades</li>
+                <li><code>npm audit fix</code> - Corrige vulnerabilidades</li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Utilitários Avançados</h4>
+            <ul>
+                <li><code>npx create-react-app my-app</code> - Executa pacote sem instalar</li>
+                <li><code>npm ci --only=production</code> - Instala para produção</li>
+                <li><code>killall node</code> - Para todos processos Node</li>
+                <li><code>NODE_ENV=production node app.js</code> - Define ambiente</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="best-practice">
+        <strong>Dica:</strong> Use <code>&amp;&amp;</code> para múltiplos comandos:<br>
+        <code>npm install &amp;&amp; npm start</code>
+    </div>
+</div>
+        </section>
+
+        <!-- Seção Adicionada: Express Básico -->
+        <section class="content-section">
+            <h3>Criando API com Express</h3>
+            <pre><code>const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+res.json({ mensagem: "API Funcionando!" });
+});
+
+app.listen(3000, () => {
+console.log('Servidor rodando na porta 3000');
+});</code></pre>
+        </section>
+
+        <!-- Seção Adicionada: Variáveis de Ambiente -->
+        <section class="content-section">
+            <h3>Configuração de Ambiente</h3>
+            <div class="code-comparison">
+                <div>
+                    <h4>.env</h4>
+                    <pre><code>PORT=3000
+DB_HOST=localhost
+API_KEY=minha_chave_secreta</code></pre>
+                </div>
+                <div>
+                    <h4>Uso no Código</h4>
+                    <pre><code>require('dotenv').config();
+
+const port = process.env.PORT;
+console.log(`Porta: ${port}`);</code></pre>
+                </div>
+            </div>
+        </section>
+
+            <section class="content-section">
+                <h3>Event Loop Architecture</h3>
+                <div class="code-comparison">
+                    <div>
+                        <h4>Blocking I/O</h4>
+                        <pre><code>const fs = require('fs');
+const data = fs.readFileSync('file.txt'); // Bloqueante
+console.log(data);</code></pre>
+                    </div>
+                    <div>
+                        <h4>Non-blocking I/O</h4>
+                        <pre><code>fs.readFile('file.txt', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+}); // Não bloqueante</code></pre>
+                    </div>
+                </div>
+                <div class="best-practice">
+                    <strong>Melhor prática:</strong> Sempre usar operações assíncronas para I/O
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>Streams e Buffer</h3>
+                <pre><code>const { Readable } = require('stream');
+
+class MyReadable extends Readable {
+    _read(size) {
+        // Implementação da leitura
+    }
+}
+
+const stream = new MyReadable();
+stream.pipe(process.stdout);</code></pre>
+                <ul>
+                    <li>Processamento de dados em tempo real</li>
+                    <li>Baixo consumo de memória</li>
+                    <li>Pipe para encadeamento de operações</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>Cluster Module</h3>
+                <pre><code>const cluster = require('cluster');
+const os = require('os');
+
+if (cluster.isMaster) {
+    const numCPUs = os.cpus().length;
+    for (let i = 0; i < numCPUs; i++) {
+        cluster.fork();
+    }
+} else {
+    // Código do worker
+}</code></pre>
+                <p>Escalabilidade horizontal utilizando múltiplos processos</p>
+            </section>
+               
+    
+            <div class="playlist-section">
+                <h2>🎬 Playlist Nodejs</h2>
+                <div class="video-container">
+                    <a href="https://youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B&si=yaJQ7YjEhqbmO4v0" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="video-link">
+                        <img src="https://img.youtube.com/vi/LLqq6FemMNQ/hqdefault.jpg" 
+                             alt="Curso Node.js" 
+                             class="video-cover">
+                        <div class="play-button"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Créditos! -->
+            <div class="playlist-credits">
+                <strong>Curso desenvolvido por Victor Lima</strong><br>
+                <small>
+                    Conteúdo produzido sobre Ciência da Computação<br>
+                    Plataforma oficial: 
+                    <a href="https://www.cienciadacomputacao.com.br" 
+                       target="_blank" 
+                       rel="noopener">
+                       Guia do Programador
+
+                    </a><br>
+                    Canal no YouTube: 
+                    <a href="https://www.youtube.com/@GuiadoProgramador" 
+                       target="_blank" 
+                       rel="noopener">
+                       @GuiadoProgramador
+                    </a>
+                </small>
+            </div>
+        </div>
+            
             </section>
         </main>
     </div>

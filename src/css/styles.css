@@ -55,7 +55,21 @@ h2::after {
     border-radius: 2px;
 }
 
+.code-comparison ul{
+    margin-left: 20px;
+}
 
+.best-practice ul{
+    margin-left: 20px;
+   }
+
+.content-section ul{
+       margin-left: 20px; 
+   }
+
+.language-content{
+border-radius: 8px;
+}
 
 .container {
     display: flex;

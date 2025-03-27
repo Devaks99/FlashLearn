@@ -79,152 +79,153 @@
                     <div id="html-content" class="study-section">
                     
                                     <div class="study-section">
-                                        <h3>Domine GitHub - Iniciante</h3>
-                                        <section class="content-section">
-                                            <h3>O Que é GitHub?</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Definição</h4>
-                                                    <ul>
-                                                        <li>Plataforma de hospedagem de código</li>
-                                                        <li>Baseado em Git para controle de versão</li>
-                                                        <li>Ferramentas de colaboração em equipe</li>
-                                                        <li>Ecossistema completo para desenvolvimento</li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h4>Principais Recursos</h4>
-                                                    <ul>
-                                                        <li>Repositórios públicos/privados</li>
-                                                        <li>Pull Requests e Code Review</li>
-                                                        <li>GitHub Actions (CI/CD)</li>
-                                                        <li>GitHub Pages (hospedagem estática)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Fluxo de Trabalho -->
-                                        <section class="content-section">
-                                            <h3>Fluxo Básico</h3>
-                                            <pre><code># Clonar repositório
-                                        git clone https://github.com/usuario/repo.git
-                                        
-                                        # Fazer mudanças e commitar
-                                        git add .
-                                        git commit -m "mensagem"
-                                        
-                                        # Enviar para o GitHub
-                                        git push origin main</code></pre>
-                                            <div class="best-practice">
-                                                <strong>Dica:</strong> Sempre faça <code>git pull</code> antes de começar a trabalhar
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Colaboração -->
-                                        <section class="content-section">
-                                            <h3>Trabalho em Equipe</h3>
-                                            <div class="code-comparison">
-                                                <div>
-                                                    <h4>Fork e Clone</h4>
-                                                    <pre><code>1. Fazer fork do repositório
-                                        2. Clonar seu fork localmente
-                                        3. Criar branch para feature
-                                        4. Fazer pull request após commits</code></pre>
-                                                </div>
-                                                <div>
-                                                    <h4>Boas Práticas</h4>
-                                                    <ul>
-                                                        <li>Commits atômicos</li>
-                                                        <li>Mensagens claras</li>
-                                                        <li>Referencie issues nos PRs</li>
-                                                        <li>Revise código dos colegas</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        
-                                        <!-- Seção Adicionada: Segurança -->
-                                        <section class="content-section">
-                                            <h3>Segurança Básica</h3>
-                                            <div class="best-practice mega-tip">
-                                                <strong>⚠️ Avisos Importantes:</strong>
-                                                <ul>
-                                                    <li>Nunca comite senhas ou chaves API</li>
-                                                    <li>Use 2FA (autenticação de dois fatores)</li>
-                                                    <li>Revise permissões de acesso</li>
-                                                    <li>Use Personal Access Tokens (PAT)</li>
-                                                </ul>
-                                            </div>
-                                        </section>
-                                        
-                                        <section class="content-section">
-                                            <h3>GitHub Actions</h3>
-                                            <pre><code>name: CI
-                                        on: [push]
-                                        jobs:
-                                        build:
-                                        runs-on: ubuntu-latest
-                                        steps:
-                                        - uses: actions/checkout@v2
-                                        - name: Install Dependencies
-                                        run: npm ci
-                                        - name: Run Tests
-                                        run: npm test</code></pre>
-                                            <div class="best-practice">
-                                                <strong>Dica:</strong> Comece com templates pré-configurados
-                                            </div>
-                                        </section>
-                                        
-                                                    <section class="content-section">
-                                                        <h3>Code Review Eficiente</h3>
-                                                        <div class="best-practice">
-                                                            <strong>Dicas:</strong>
-                                                            <ul>
-                                                                <li>Use templates para Pull Requests</li>
-                                                                <li>Revise por etapas (arquitetura, lógica, estilo)</li>
-                                                                <li>Use sugestões de código direto no diff</li>
-                                                            </ul>
-                                                        </div>
-                                                    </section>
-                                        
-                                                    <section class="content-section">
-                                                        <h3>GitHub Pages</h3>
-                                                        <pre><code># Configuração básica
-                                        # 1. Criar branch gh-pages
-                                        # 2. Habilitar no Settings > Pages
-                                        # 3. Configurar ação de deploy automático</code></pre>
-                                                        <p>Hospedagem estática gratuita para projetos</p>
-                                                    </section>
+<h3>Domine GitHub - Iniciante</h3>
+<section class="content-section">
+    <h3>O Que é GitHub?</h3>
+    <div class="code-comparison">
+        <div>
+            <h4>Definição</h4>
+            <ul>
+                <li>Plataforma de hospedagem de código</li>
+                <li>Baseado em Git para controle de versão</li>
+                <li>Ferramentas de colaboração em equipe</li>
+                <li>Ecossistema completo para desenvolvimento</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h4>Principais Recursos</h4>
+            <ul>
+                <li>Repositórios públicos/privados</li>
+                <li>Pull Requests e Code Review</li>
+                <li>GitHub Actions (CI/CD)</li>
+                <li>GitHub Pages (hospedagem estática)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Adicionada: Fluxo de Trabalho -->
+<section class="content-section">
+    <h3>Fluxo Básico</h3>
+    <pre><code># Clonar repositório
+git clone https://github.com/usuario/repo.git
+
+# Fazer mudanças e commitar
+git add .
+git commit -m "mensagem"
+
+# Enviar para o GitHub
+git push origin main</code></pre>
+    <div class="best-practice">
+        <strong>Dica:</strong> Sempre faça <code>git pull</code> antes de começar a trabalhar
+    </div>
+</section>
+
+<!-- Seção Adicionada: Colaboração -->
+<section class="content-section">
+    <h3>Trabalho em Equipe</h3>
+    <div class="code-comparison">
+        <div>
+            <h4>Fork e Clone</h4>
+            <pre><code>1. Fazer fork do repositório
+2. Clonar seu fork localmente
+3. Criar branch para feature
+4. Fazer pull request após commits</code></pre>
+        </div>
+        <div>
+            <h4>Boas Práticas</h4>
+            <ul>
+                <li>Commits atômicos</li>
+                <li>Mensagens claras</li>
+                <li>Referencie issues nos PRs</li>
+                <li>Revise código dos colegas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Adicionada: Segurança -->
+<section class="content-section">
+    <h3>Segurança Básica</h3>
+    <div class="best-practice mega-tip">
+        <strong>⚠️ Avisos Importantes:</strong>
+        <ul>
+            <li>Nunca comite senhas ou chaves API</li>
+            <li>Use 2FA (autenticação de dois fatores)</li>
+            <li>Revise permissões de acesso</li>
+            <li>Use Personal Access Tokens (PAT)</li>
+        </ul>
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>GitHub Actions</h3>
+    <pre><code>name: CI
+on: [push]
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
+- name: Install Dependencies
+run: npm ci
+- name: Run Tests
+run: npm test</code></pre>
+    <div class="best-practice">
+        <strong>Dica:</strong> Comece com templates pré-configurados
+    </div>
+</section>
+
+            <section class="content-section">
+                <h3>Code Review Eficiente</h3>
+                <div class="best-practice">
+                    <strong>Dicas:</strong>
+                    <ul>
+                        <li>Use templates para Pull Requests</li>
+                        <li>Revise por etapas (arquitetura, lógica, estilo)</li>
+                        <li>Use sugestões de código direto no diff</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h3>GitHub Pages</h3>
+                <pre><code># Configuração básica
+# 1. Criar branch gh-pages
+# 2. Habilitar no Settings > Pages
+# 3. Configurar ação de deploy automático</code></pre>
+                <p>Hospedagem estática gratuita para projetos</p>
+            </section>
                                      
                                     
-                                                    <div class="playlist-section">
-                                                        <h2>🎬 Playlist GitHub</h2>
-                                                        <div class="video-container">
-                                                            <a href="https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&si=LHXTqWgMvdUDl9Od" 
-                                                               target="_blank" 
-                                                               rel="noopener noreferrer"
-                                                               class="video-link">
-                                                                <img src="https://img.youtube.com/vi/hcZ0qtwvN1w/hqdefault.jpg" 
-                                                                     alt="Curso Node.js" 
-                                                                     class="video-cover">
-                                                                <div class="play-button"></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+            <div class="playlist-section">
+                <h2>🎬 Playlist GitHub</h2>
+                <div class="video-container">
+                    <a href="https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&si=LHXTqWgMvdUDl9Od" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="video-link">
+                        <img src="https://img.youtube.com/vi/hcZ0qtwvN1w/hqdefault.jpg" 
+                             alt="Curso Node.js" 
+                             class="video-cover">
+                        <div class="play-button"></div>
+                    </a>
+                </div>
+            </div>
 
-                                                    <!-- Créditos! -->
-                                                    <div class="playlist-credits">
-                                                        <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
-                                                        <small>
-                                                            Direitos autorais © 2013-2023 Curso em Vídeo<br>
-                                                            Material completo disponível em 
-                                                            <a href="https://www.cursoemvideo.com/curso/curso-de-git/" target="_blank" rel="noopener">
-                                                                Curso de GitHub - Curso em Vídeo
-                                                            </a>
-                                                        </small>
-                                                    </div>
-                                                </div>
+            <!-- Créditos! -->
+            <div class="playlist-credits">
+                <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+                <small>
+                    Direitos autorais © 2013-2023 Curso em Vídeo<br>
+                    Material completo disponível em 
+                    <a href="https://www.cursoemvideo.com/curso/curso-de-git/" target="_blank" rel="noopener">
+                        Curso de GitHub - Curso em Vídeo
+                    </a>
+                </small>
+            </div>
+        </div>
             </section>
         </main>
     </div>
