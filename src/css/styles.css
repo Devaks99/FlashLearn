@@ -55,6 +55,20 @@ h2::after {
     border-radius: 2px;
 }
 
+/* Titulo principal das linguagens  */
+.title-lang{
+ text-align: center;
+ background: linear-gradient(135deg,
+ #2563eb,       /* Tom principal */
+ #3b82f6 60%,  /* Versão 20% mais clara */
+ #6C95F5       /* Tom mais claro (L=75% no HSL) */
+);
+ border-radius: 12px;
+ padding: 5px;
+ color:white ;
+}
+
+/* distancia das uls das paginas  */
 .code-comparison ul{
     margin-left: 20px;
 }
@@ -67,6 +81,7 @@ h2::after {
        margin-left: 20px; 
    }
 
+/* estilização dos códigos de exemplos : */
 .language-content{
 border-radius: 8px;
 text-shadow:none !important;
@@ -90,7 +105,7 @@ margin-bottom: 35px;
         margin-bottom: 25px;
         }
 }
-
+/* FIM estilização dos códigos de exemplos : */
 
 .container {
     display: flex;
