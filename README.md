@@ -1,6 +1,5 @@
 # 📚 FlashLearn - Guia de Estudos 🚀
 
-![logoensino](https://github.com/user-attachments/assets/ea5bf241-6d83-4da8-a778-d5ff7b69231a)
 
 
 ## 🌟 Sobre o Projeto
