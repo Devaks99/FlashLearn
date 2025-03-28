@@ -1090,6 +1090,209 @@ const quizzes = {
             correct: 0,
             explanation: "GitHub Codespaces permite criar ambientes de desenvolvimento na nuvem pré-configurados diretamente do seu repositório. Isso elimina a necessidade de configurar ambientes locais e mantém toda a equipe com setups consistentes."
         }
+    ],
+
+   logica : [
+        {
+            question: "Qual a definição correta de algoritmo?",
+            options: [
+                "Sequência lógica de passos para resolver um problema",
+                "Tipo especial de variável",
+                "Linguagem de programação visual"
+            ],
+            correct: 0,
+            explanation: "Algoritmo é uma sequência finita de instruções bem definidas para resolver problemas específicos"
+        },
+        {
+            question: "Qual estrutura verifica múltiplas condições?",
+            options: [
+                "else if",
+                "switch case",
+                "Ambas as anteriores"
+            ],
+            correct: 2,
+            explanation: "Tanto 'else if' quanto 'switch case' permitem verificar múltiplas condições de forma estruturada"
+        },
+        {
+            question: "Qual loop SEMPRE executa pelo menos uma vez?",
+            options: [
+                "do...while",
+                "for",
+                "while"
+            ],
+            correct: 0,
+            explanation: "O loop 'do...while' sempre executa pelo menos uma vez porque a condição é verificada somente após a primeira execução. Ou seja, ele executa o bloco de código primeiro e só depois verifica se deve continuar."
+        },
+        {
+            question: "Para que serve o operador % ?",
+            options: [
+                "Resto da divisão",
+                "Porcentagem",
+                "Comentário"
+            ],
+            correct: 0,
+            explanation: "Em programação, % é o operador módulo (resto da divisão)"
+        },
+        {
+            question: "Qual erro ocorre neste código? if (x = 5) { ... }",
+            options: [
+                "Atribuição ao invés de comparação",
+                "Falta de chaves",
+                "Variável não declarada"
+            ],
+            correct: 0,
+            explanation: "'=' é operador de atribuição. Para comparação use '=='. Então o correto seria: if (x == 5) { ... }"
+        },
+        {
+            question: "Qual estrutura é ideal para repetição com contador?",
+            options: [
+                "for",
+                "while",
+                "do...while"
+            ],
+            correct: 0,
+            explanation: "O 'for' é melhor quando sabemos o número exato de iterações!"
+        },
+        {
+            question: "O que é debug?",
+            options: [
+                "Processo de encontrar e corrigir erros",
+                "Tipo de variável",
+                "Método para excluir código"
+            ],
+            correct: 0,
+            explanation: "Debug é a prática de identificar e resolver problemas no código (corrigir erros)"
+        },
+        {
+            question: "Qual a função do Math.sqrt(num)?",
+            options: [
+                "Calcular raiz quadrada",
+                "Arredondar números",
+                "Gerar números aleatórios"
+            ],
+            correct: 0,
+            explanation: "A função 'Math.sqrt()' retorna a raiz quadrada de um número"
+        },
+        {
+            question: "Qual destes é um operador lógico?",
+            options: [
+                "&&",
+                "++",
+                "#"
+            ],
+            correct: 0,
+            explanation: "&& representa o operador lógico AND. O '++' é um operador de incremento, e o '#' não é um operador válido em JavaScript"
+        },
+        {
+            question: "Para que serve break em loops?",
+            options: [
+                "Interromper a execução do loop",
+                "Pausar temporariamente",
+                "Ignorar iteração atual"
+            ],
+            correct: 0,
+            explanation: "O comando break é usado para parar imediatamente a execução de um loop, saindo dele completamente."
+        },
+        {
+            question: "Qual método verifica elementos em array?",
+            options: [
+                "includes()",
+                "join()",
+                "push()"
+            ],
+            correct: 0,
+            explanation: "includes() verifica se elemento existe no array ✅. 'join()' transforma o array em string, e 'push()' adiciona um elemento no array."
+        },
+        {
+            question: "O que significa DRY em programação?",
+            options: [
+                "Don't Repeat Yourself",
+                "Debug Repeatedly Yourself",
+                "Data Recovery Yield"
+            ],
+            correct: 0,
+            explanation: "DRY = Don't Repeat Yourself (Não se Repita). Princípio de reutilização de código!"
+        },
+        {
+            question: "Qual destes NÃO é tipo primitivo?",
+            options: [
+                "array",
+                "boolean",
+                "number"
+            ],
+            correct: 0,
+            explanation: "O Array é estrutura de dados, não tipo primitivo. Os tipos primitivos em JavaScript são dados que não são objetos e não possuem métodos. Exemplo: string, number, boolean, undefined, null, bigint e symbol."
+        },
+        {
+            question: "Para que serve parseInt()?",
+            options: [
+                "Converter string para número inteiro",
+                "Verificar tipo de dado",
+                "Dividir strings"
+            ],
+            correct: 0,
+            explanation: "parseInt() converte string para número inteiro"
+        },
+        {
+            question: "Qual a diferença entre == e ===?",
+            options: [
+                "Comparação com verificação de tipo",
+                "Atribuição vs comparação",
+                "Operadores matemáticos"
+            ],
+            correct: 0,
+            explanation: "'==' (igualdade solta) → Compara apenas o valor, sem verificar o tipo. Se os tipos forem diferentes, ele tenta converter para comparar. '===' (igualdade estrita) → Compara valor e tipo, sem conversão."
+        },
+        {
+            question: "O que é escopo de variável?",
+            options: [
+                "Onde a variável pode ser acessada",
+                "Tipo de dados da variável",
+                "Valor armazenado na variável"
+            ],
+            correct: 0,
+            explanation: "Escopo define a visibilidade e acesso da variável. É onde a variável pode ser acessada."
+        },
+        {
+            question: "Qual método ordena arrays?",
+            options: [
+                "sort()",
+                "filter()",
+                "map()"
+            ],
+            correct: 0,
+            explanation: "'sort()' ordena elementos do array alfabeticamente. 'filter()' (Filtra elementos, mas não ordena) 'map()' (Cria um novo array transformado, sem ordenar)"
+        },
+        {
+            question: "O que é NaN?",
+            options: [
+                "Not a Number",
+                "New Array Number",
+                "Null Alternative Number"
+            ],
+            correct: 0,
+        explanation: "NaN = Not a Number (Não é Número). É o resultado de operações inválidas!"
+        },
+        {
+            question: "Qual a função de try...catch?",
+            options: [
+                "Tratamento de erros",
+                "Declaração de variáveis",
+                "Controle de loops"
+            ],
+            correct: 0,
+            explanation: "O bloco 'try...catch' é usado para capturar e tratar erros em um código, evitando que ele quebre completamente quando ocorre uma exceção."
+        },
+        {
+            question: "O que significa 'callback function'?",
+            options: [
+                "Função passada como argumento",
+                "Função que retorna valores",
+                "Função matemática"
+            ],
+            correct: 0,
+            explanation: "Uma callback function é uma função passada como argumento para outra função, para ser executada depois que a função principal completar sua execução. Ou seja, é uma maneira de garantir que o código seja executado em um momento específico, sem interromper a execução do fluxo principal."
+        }
     ]
 };
 
@@ -1133,7 +1336,16 @@ function startQuiz(lang) {
     score = 0;
     userAnswers = [];
     
-    document.getElementById('quizTitle').textContent = `Quiz ${lang.toUpperCase()}`;
+    const quizNames = {
+        logica: "Lógica de Programação",
+        html: "HTML",
+        css: "CSS",
+        javascript: "JavaScript",
+        nodejs: "Node.js",
+        git: "Git",
+        github: "GitHub"
+    };
+    document.getElementById('quizTitle').textContent = `Quiz de ${quizNames[lang] || lang.toUpperCase()}`;
     document.getElementById('currentScore').textContent = score;
     
     showQuestion();

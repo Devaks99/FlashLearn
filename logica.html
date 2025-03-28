@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashLearn - Lógica de Programação</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logoensino.png">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Mobile -->
+    <header class="mobile-header">
+        <div class="mobile-header-content">
+<a href="index.html" class="logo-link">
+    <div class="logo">
+        <img src="img/logoensino.png" alt="FlashLearn Logo">
+        <h2>FlashLearn</h2>
+    </div>
+</a>
+<button class="hamburger" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+        </div>
+        <nav class="mobile-menu">
+<div class="mobile-menu-content">
+    <ul class="menu-linguagens">
+        <li class="menu-title">Conteúdos para Estudo</li>
+        <li><a href="logica.html" data-lang="logica">Lógica de Programação</a></li>
+        <li><a href="html.html" data-lang="html">HTML5</a></li>
+        <li><a href="css.html" data-lang="css">CSS3</a></li>
+        <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+        <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+        <li><a href="git.html" data-lang="git">Git</a></li>
+        <li><a href="github.html" data-lang="github">GitHub</a></li>
+    </ul>
+    <div class="menu-actions">
+        <a href="quizzes.html" class="menu-action">Quizzes</a>
+        <a href="index.html" class="menu-action">Home</a>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+    </div>
+</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Desktop -->
+        <nav id="sidebar" class="sidebar">
+<a href="index.html" class="logo-link">
+    <div class="logo">
+        <img src="img/logoensino.png" alt="FlashLearn Logo">
+        <h2>FlashLearn</h2>
+    </div>
+</a>
+<ul class="menu-linguagens">
+    <li class="menu-title">Conteúdos para Estudo</li>
+    <li><a href="logica.html" data-lang="logica">Lógica de Programação</a></li>
+    <li><a href="html.html" data-lang="html">HTML5</a></li>
+    <li><a href="css.html" data-lang="css">CSS3</a></li>
+    <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
+    <li><a href="nodejs.html" data-lang="nodejs">Node.js</a></li>
+    <li><a href="git.html" data-lang="git">Git</a></li>
+    <li><a href="github.html" data-lang="github">GitHub</a></li>
+</ul>
+<div class="menu-actions">
+    <a href="quizzes.html" class="menu-action">Quizzes</a>
+    <a href="index.html" class="menu-action">Home</a>
+</div>
+<div class="footer-copyright">
+    <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+</div>
+        </nav>
+
+        <main id="main-content">
+<section class="language-content">
+    <h1 class="title-lang">Lógica de Programação</h1>
+    
+    <div class="content-section">
+        <h2>🧠 Fundamentos Essenciais</h2>
+        <div class="study-section">
+<section class="content-section">
+    <h3>O que é um Algoritmo?</h3>
+    <div class="definition-box">
+        <p>Um algoritmo é como uma <strong>receita de bolo</strong> para computadores. É uma sequência <strong>lógica e ordenada</strong> de passos para resolver um problema específico.</p>
+        
+        <div class="best-practice">
+<strong>Características principais:</strong>
+<ul>
+    <li>📌 Deve ter um <strong>início e fim (bem definidos)</strong></li>
+    <li>📌 Cada passo precisa ser <strong>claro e não ambíguo</strong></li>
+    <li>📌 Deve produzir <strong>resultados consistentes</strong></li>
+</ul>
+        </div>
+
+        <pre><code class="language-javascript">
+// Exemplo detalhado: Calcular média de 3 números
+function calcularMedia(a, b, c) {
+    // 1. Somar os três números
+    const soma = a + b + c;
+    
+    // 2. Dividir pela quantidade de números (3)
+    const media = soma / 3;
+    
+    // 3. Retornar o resultado
+    return media;
+}
+        </code></pre>
+
+        <div class="dica">
+<strong>Analogia do Dia a Dia:</strong>
+<p>Fazer um café:
+1. Aquecer água ➔
+2. Colocar pó no filtro ➔
+3. Passar água quente ➔
+4. Servir na xícara</p>
+        </div>
+    </div>
+</section>
+
+<section class="content-section">
+    <h3>Estruturas Básicas</h3>
+    <div class="code-comparison">
+        <div class="logic-concept">
+<h4>Condicionais (Tomada de Decisão)</h4>
+<p>São como <strong>placas de trânsito</strong> do código. Permitem executar ações diferentes baseadas em condições.</p>
+
+<div class="best-practice">
+    <strong>Quando usar:</strong>
+    <ul>
+        <li>Validar dados de entrada</li>
+        <li>Executar ações diferentes por contexto</li>
+        <li>Tratamento de erros</li>
+    </ul>
+</div>
+
+<pre><code class="language-javascript">
+// Exemplo completo: Sistema de clima
+let temperatura = 25;
+let chuva = false;
+
+if (temperatura > 30) {
+    console.log("Dia muito quente! 🥵");
+    console.log("Recomendo tomar muita água!");
+} else if (temperatura > 20 && !chuva) {
+    console.log("Clima agradável! 😎");
+    console.log("Bom dia para um passeio!");
+} else {
+    console.log("Melhor ficar em casa! 🏠");
+    if (chuva) {
+        console.log("Não esqueça o guarda-chuva! ☔");
+    }
+}
+</code></pre>
+
+<div class="dica">
+    <strong>Dica Importante:</strong>
+    <p>Sempre teste condições extremas (valores mínimos e máximos) para garantir que seu código funciona em todos os cenários!</p>
+</div>
+        </div>
+        
+        <div class="logic-concept">
+<h4>Laços de Repetição</h4>
+<p>São como <strong>esteira de fábrica</strong> - executam a mesma ação várias vezes até atingir uma condição.</p>
+
+<div class="best-practice">
+    <strong>Tipos principais:</strong>
+    <ul>
+        <li><code>for</code> - Quando sabemos quantas repetições</li>
+        <li><code>while</code> - Quando depende de condição</li>
+        <li><code>do...while</code> - Executa pelo menos uma vez</li>
+    </ul>
+</div>
+
+<pre><code class="language-javascript">
+// Exemplo completo: Sistema de caixa eletrônico
+let saldo = 1000;
+let saque;
+
+do {
+    saque = prompt("Quanto deseja sacar? (Máximo R$ 500)");
+    saque = Number(saque);
+
+    if (saque > 500) {
+        console.log("Valor excede limite máximo!");
+    } else if (saque > saldo) {
+        console.log("Saldo insuficiente!");
+    } else {
+        saldo -= saque;
+        console.log(`Saque realizado. Novo saldo: R$ ${saldo}`);
+    }
+} while (saldo > 0 && confirm("Deseja fazer outro saque?"));
+
+console.log("Operação finalizada. Retire seu cartão!");
+</code></pre>
+
+<div class="dica">
+    <strong>Cuidado!</strong>
+    <p>Sempre atualize a variável de controle para evitar loops infinitos!</p>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Exercícios Ampliada -->
+<section class="content-section">
+    <h3>Exercício Prático Detalhado</h3>
+    <div class="interactive-example">
+        <p>Vamos implementar passo a passo uma função que verifica números primos:</p>
+        
+        <div class="best-practice">
+<strong>Passo a Passo:</strong>
+<ol>
+    <li>Números menores que 2 não são primos</li>
+    <li>Dividir o número por todos inteiros até sua raiz quadrada</li>
+    <li>Se nenhuma divisão for exata, é primo</li>
+</ol>
+        </div>
+
+        <pre><code class="language-javascript">
+function ehPrimo(num) {
+    // Passo 1: Verificar números menores que 2
+    if (num <= 1) {
+        console.log(`${num} não é primo!`);
+        return false;
+    }
+
+    // Passo 2: Verificar divisibilidade
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+console.log(`Divisível por ${i} ❌`);
+return false;
+        }
+    }
+
+    // Passo 3: Se passou nos testes, é primo
+    console.log(`${num} é primo! ✅`);
+    return true;
+}
+
+// Testando a função
+ehPrimo(7);  // ✅
+ehPrimo(12); // ❌
+ehPrimo(1);  // ❌
+        </code></pre>
+
+        <div class="best-practice">
+<strong>Desafio Extra:</strong>
+<p>Modifique a função para:
+1. Retornar todos os primos em um intervalo
+2. Contar quantos primos foram encontrados
+3. Calcular tempo de execução</p>
+        </div>
+    </div>
+</section>
+
+<!-- Nova Seção de Erros Comuns -->
+<section class="content-section">
+    <h3>🛑 Erros Frequentes de Iniciantes</h3>
+    <div class="best-practice error">
+        <strong>Armadilhas para Evitar:</strong>
+        <ul>
+<li>Esquecer chaves {} em blocos de código</li>
+<li>Confundir = (atribuição) com == (comparação)</li>
+<li>Variáveis não inicializadas</li>
+<li>Off-by-one errors em loops</li>
+        </ul>
+        
+        <pre><code class="language-javascript">
+// Exemplo de erro comum: tentativa de somar números de 1 a 5
+let total = 0;
+for (let i = 1; i < 5; i++); // Erro: ; extra
+{
+    total += i; // i não está definido aqui
+}
+
+        </code></pre>
+    </div>
+</section>
+        </div>
+        <div class="error-example">
+<div class="incorrect-code">   
+    <pre> <h4>❌ Código com Problemas:</h4><code class="language-javascript">
+    // Tentativa de somar números de 1 a 5
+    let total = 0;
+    for (let i = 1; i < 5; i++); // Ponto e vírgula errado
+    {
+        total += i; // Erro: i não está definido aqui
+    }
+    console.log(total); // ReferenceError: i is not defined
+    </code></pre>
+    
+   <div class="error-explanation">
+    <strong>O que está errado?</strong>
+        <ul>
+<li>➔ Ponto e vírgula após o for() termina o loop prematuramente</li>
+<li>➔ A variável i só existe dentro do loop</li>
+<li>➔ Escopo de bloco não está sendo respeitado</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="correct-code">
+    <pre> <h4>✅ Versão Corrigida:</h4><code class="language-javascript">
+    // Soma correta de 1 a 5
+    let totalCorrigido = 0;
+    
+    // 1. Remove o ponto e vírgula após a declaração do for
+    // 2. Ajusta a condição para <= 5
+    for (let j = 1; j <= 5; j++) {
+        // 3. Mantém a lógica dentro do bloco do loop
+        totalCorrigido += j;
+    }
+    
+    console.log(totalCorrigido); // Resultado correto: 15
+    </code></pre>
+    
+    <div class="correction-details">
+        <strong>Princípios Aplicados:</strong>
+        <ul>
+<li>📌 Blocos de código devem estar entre {}</li>
+<li>📌 Variáveis de loop têm escopo local</li>
+<li>📌 Condições de parada devem ser inclusivas (usar <= quando necessário)</li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </section>
+
+        <!-- Playlist do Curso em Vídeo -->
+        <div class="playlist-section">
+<h2>🎓 Curso de Lógica de Programação</h2>
+<div class="playlist-embed">
+    <iframe 
+        src="https://www.youtube.com/embed/videoseries?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+<div class="playlist-credits">
+    <strong>Conteúdo produzido e distribuído pelo Prof. Gustavo Guanabara</strong><br>
+    <small>
+        Direitos autorais © 2013-2023 Curso em Vídeo<br>
+        Esta apresentação contém trechos da playlist oficial disponível em 
+        <a href="https://www.cursoemvideo.com/curso/algoritmo/" target="_blank" rel="noopener">Curso de Algoritmos - Curso em Vídeo</a>
+    </small>
+</div>
+        </div>
+    </div>
+</section>
+        </main>
+    </div>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+<path fill="currentColor" d="M13 5.41V21a1 1 0 0 1-2 0V5.41l-4.3 4.3a1 1 0 1 1-1.4-1.42l6-6a1 1 0 0 1 1.4 0l6 6a1 1 0 1 1-1.4 1.42L13 5.4z"/>
+        </svg>
+    </button>
+
+    <div class="mobile-copyright">
+        <p>© 2025 FlashLearn<br>Todos os direitos reservados</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/menuHamburguer.js"></script>
+    <script src="src/js/Scroll-top.js"></script>
+    <script src="src/js/script.js"></script>
+    
+</body>
+</html>

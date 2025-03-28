@@ -14,10 +14,12 @@
 <!-- Header Mobile -->
 <header class="mobile-header">
     <div class="mobile-header-content">
-        <div class="logo">
-            <img src="img/logoensino.png" alt="FlashLearn Logo">
-            <h2>FlashLearn</h2>
-        </div>
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="img/logoensino.png" alt="FlashLearn Logo">
+                <h2>FlashLearn</h2>
+            </div>
+        </a>
         <button class="hamburger" aria-label="Abrir menu">
             <span></span>
             <span></span>
@@ -27,7 +29,8 @@
     <nav class="mobile-menu">
         <div class="mobile-menu-content">
             <ul class="menu-linguagens">
-                <li class="menu-title">Linguagens para Estudo</li>
+                <li class="menu-title">Conteúdos para Estudo</li>
+                <li><a href="logica.html" data-lang="logica">Lógica de Programação</a></li>
                 <li><a href="html.html" data-lang="html">HTML5</a></li>
                 <li><a href="css.html" data-lang="css">CSS3</a></li>
                 <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
@@ -48,12 +51,15 @@
     <div class="container">
         <nav id="sidebar" class="sidebar">
             <button id="close-menu" class="close-menu">×</button>
-            <div class="logo">
-                <img src="img/logoensino.png" alt="FlashLearn Logo">
-                <h2>FlashLearn</h2>
-            </div>
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="img/logoensino.png" alt="FlashLearn Logo">
+                    <h2>FlashLearn</h2>
+                </div>
+            </a>
             <ul class="menu-linguagens">
-                <li class="menu-title">Linguagens para Estudo</li>
+                <li class="menu-title">Conteúdos para Estudo</li>
+                <li><a href="logica.html" data-lang="logica">Lógica de Programação</a></li>
                 <li><a href="html.html" data-lang="html">HTML5</a></li>
                 <li><a href="css.html" data-lang="css">CSS3</a></li>
                 <li><a href="javascript.html" data-lang="javascript">JavaScript</a></li>
@@ -76,6 +82,13 @@
                 
                 <div class="quizzes-grid" id="quizzesGrid">
                     <!-- Cards das linguagens -->
+                    <div class="quiz-card" data-lang="logica">
+                        <div class="quiz-icon">🧠</div>
+                        <h3>Lógica de Programação</h3>
+                        <p>20 questões sobre fundamentos</p>
+                    </div>
+
+                
                     <div class="quiz-card" data-lang="html">
                         <div class="quiz-icon">📄</div>
                         <h3>HTML5</h3>
@@ -112,6 +125,8 @@
                         <p>20 questões sobre repositórios</p>
                     </div>
                 </div>
+
+               
 
                 <div class="quiz-container hidden" id="quizContainer">
                     <div class="quiz-active">

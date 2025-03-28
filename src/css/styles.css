@@ -35,6 +35,7 @@ h1, h2, h3, h4 {
     line-height: 1.3;
     margin-bottom: 1.25rem;
     color: var(--text-color);
+    margin: 1rem 0;
 }
 
 h2 {
@@ -54,6 +55,64 @@ h2::after {
     background: var(--primary-color);
     border-radius: 2px;
 }
+
+/* Iteração com a logo */
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    cursor: pointer; /* Adiciona cursor pointer */
+    transition: none; /* Remove transição de escala */
+}
+
+.logo-link:hover {
+    background-color: transparent !important; 
+    transform: none;
+}
+
+/* Mobile Header específico */
+.mobile-header .logo-link {
+    width: auto;
+    height: 100%;
+}
+
+/* SOMBRA DOS OPERADORES  */
+.token.operator{
+background: none !important;
+border: 0 1px #878787;
+}
+
+/* SOMBRA DOS CÓDIGOS  */
+.language-javascript{
+    text-shadow: 0 1px #878787 !important;  
+}
+
+/* CORES DOS CÓDIGOS ABAIXO  */
+.token.keyword{
+    color: #70d4ff !important;
+}
+
+.token.number{
+color: #ff44ac !important;
+}
+
+.token.boolean{
+color:#ff6c6c !important;
+}
+.token.string{
+    color: #05d333 !important;
+}
+
+.token.operator{
+color: #ffa132 !important;
+}
+
+.token.function{
+color:#bd4eff !important;
+}
+
+/* fim */
+
 
 /* Titulo principal das linguagens  */
 .title-lang{
@@ -133,13 +192,12 @@ margin-bottom: 35px;
     width: var(--sidebar-width);
     box-shadow: var(--card-shadow);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    scroll-behavior: smooth;
 }
 
 .sidebar .logo {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
-    padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.836);
 }
 
@@ -161,7 +219,7 @@ margin-bottom: 35px;
 
 .sidebar ul {
     list-style: none;
-    padding: 0;
+    /* padding: 0; */
 }
 
 .sidebar li {
@@ -208,7 +266,7 @@ margin-bottom: 35px;
 
 .menu-linguagens li a {
     text-decoration: none;
-    margin: 0.5rem 1rem;
+    /* margin: 0.5rem 1rem; */
     display: flex;
     align-items: center;
     padding: 0.75rem 1.25rem;
@@ -298,6 +356,56 @@ main {
     margin-bottom: 2rem;
     box-shadow: var(--card-shadow);
 }
+/* fim */
+
+
+/* Container do conteúdo informativo */
+.error-example {
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.incorrect-code {
+    background: #fee2e226;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ef4444; /* Linha vermelha na lateral */
+    position: relative;
+}
+
+.correct-code {
+    background: #dcfce726;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #22c55e;
+}
+
+.error-explanation ul,
+.correction-details ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.error-explanation li::before {
+    content: '❌';
+    margin-right: 0.5rem;
+}
+
+.correction-details li::before {
+    content: '✅';
+    margin-right: 0.5rem;
+}
+
+.error-correction {
+    border: 2px solid #ef4444;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background: #fff5f5;
+}
+/* fim */
 
 
 /* Destaques e Boas Práticas */
@@ -609,24 +717,25 @@ margin-left: 20px;
 
 .quizzes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .quiz-card {
     background: white;
     border-radius: 12px;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: var(--card-shadow);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .quiz-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .quiz-icon {
@@ -809,7 +918,7 @@ margin-left: 20px;
     text-decoration: none;
     position: absolute;
     left: 1rem;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 1;
 }
@@ -1238,6 +1347,41 @@ pre code {
     color: white !important;
 }
 
+/* Estilos específicos para Página lógica de programação */
+.definition-box {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #2563eb;
+}
+
+.logic-concept {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 1rem;
+}
+
+.interactive-example {
+    background: #fff9e6;
+    border: 2px dashed #f7df1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.interactive-example::before {
+    content: "🖥️ Experimente!";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: white;
+    padding: 0 8px;
+    color: #666;
+    font-size: 0.9em;
+}
 
 /* Ajustes para Mobile */
 @media (max-width: 768px) {
@@ -1755,9 +1899,62 @@ main {
     }
     
     .sidebar {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
         display: flex;
+        scrollbar-gutter: stable;
     }
-  }
+
+    .sidebar .logo {
+        flex-shrink: 0;
+    }
+
+    /* Personaliza a barra de rolagem para navegadores WebKit (Chrome, Edge, Safari) */
+    .sidebar::-webkit-scrollbar {
+        width: 8px;
+        height: 0;  /* Altura da scrollbar horizontal (desabilitada) */
+        background: transparent;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+        background: var(--secondary-color);
+        border-radius: 4px;
+    }
+
+    .sidebar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Para Firefox */
+    .sidebar {
+        scrollbar-width: thin;
+        scrollbar-color: var(--secondary-color) transparent;
+    }
+
+    .menu-linguagens {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding-bottom: 1rem;
+      
+        padding-right: 8px; /* Previne corte de conteúdo */
+    }
+
+    .menu-actions {
+        flex-shrink: 0;
+        padding-top: 1rem;
+        position: relative;
+        background: linear-gradient(to top, #1160d6 85%, transparent);
+    }
+
+    .footer-copyright {
+        position: sticky;
+        bottom: 0;
+        background: #1160d6;
+        z-index: 1;
+        margin-top: 15px;
+    }
+}
 
 /* Prevenir overflow horizontal */
 img, video, iframe {
