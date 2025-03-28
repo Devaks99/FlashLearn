@@ -21,14 +21,16 @@ O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, 
 ## 🎨 Capturas de Tela
 
 ### 📌 Tela Inicial
-![tela1 flashlearn](https://github.com/user-attachments/assets/af04c25d-4b38-474d-b058-79932956ef8a)
+![tela1 flashlearn](https://github.com/user-attachments/assets/d80f0358-2c86-4cbc-96c9-b221f0f6906a)
 
 
 ### 📌 Menu de Linguagens
-![tela2 flashlearn](https://github.com/user-attachments/assets/26bb8e3e-97a9-49e4-97cf-195820d12597)
+![tela2 flashlearn](https://github.com/user-attachments/assets/10eea6ea-6850-4b72-8be6-6dbfb085d7ff)
+
 
 ### 📌 Quizzes Interativos
-![tela3 flashlearn](https://github.com/user-attachments/assets/debf348c-855b-467b-a40f-da4ed744e5bc)
+![tela3 flashlearn](https://github.com/user-attachments/assets/6d748c3a-e9aa-4f44-b6a4-ac950569c171)
+
 
 
 ---
