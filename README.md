@@ -4,7 +4,7 @@
 
 ## 🌟 Sobre o Projeto
 
-O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, focado em ajudar iniciantes e desenvolvedores a aprimorarem seus conhecimentos em tecnologias essenciais. A plataforma oferece um ambiente organizado, intuitivo e dinâmico para aprender **HTML, CSS, JavaScript, Node.js, Git e GitHub**, com materiais explicativos e quizzes interativos para reforçar o aprendizado. 🎯
+O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, focado em ajudar iniciantes e desenvolvedores a aprimorarem seus conhecimentos em tecnologias essenciais. A plataforma oferece um ambiente organizado, intuitivo e dinâmico para aprender **HTML5, CSS3, JavaScript, Node.js, Git e GitHub**, com materiais explicativos e quizzes interativos para reforçar o aprendizado. 🎯
 
 ---
 
