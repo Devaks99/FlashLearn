@@ -32,6 +32,12 @@ O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, 
 ![tela3 flashlearn](https://github.com/user-attachments/assets/6d748c3a-e9aa-4f44-b6a4-ac950569c171)
 
 
+---
+
+## 🎨 Capturas de Tela - Modo Dark (Desktop e Mobile)
+
+![tela 1 dark flashlearn](https://github.com/user-attachments/assets/66a4aa13-2066-4a26-90de-f0316ab28348)
+![tela mobile modo dark flash learn](https://github.com/user-attachments/assets/34a5bc6e-c9e1-485d-b146-538d33cfc146)
 
 ---
 
@@ -40,8 +46,6 @@ O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, 
 ![tela2 mobile flashlearn](https://github.com/user-attachments/assets/2eaf087d-2b38-467e-aab7-fa828cde96e1)
 ![tela3 mobile flashlearn](https://github.com/user-attachments/assets/26b259c7-bfa3-435c-9f9a-4524d4e69c50)
 ![tela4 mobile flashlearn](https://github.com/user-attachments/assets/02cca3d2-507d-46f4-ae30-6d17a3e7dbbc)
-
-
 
 ---
 
