@@ -37,7 +37,8 @@ O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, 
 ## 🎨 Capturas de Tela - Modo Dark (Desktop e Mobile)
 
 ![tela 1 dark flashlearn](https://github.com/user-attachments/assets/66a4aa13-2066-4a26-90de-f0316ab28348)
-![tela mobile modo dark flash learn](https://github.com/user-attachments/assets/34a5bc6e-c9e1-485d-b146-538d33cfc146)
+![tela mobile modo dark flash learn](https://github.com/user-attachments/assets/36df9347-699c-4ada-b74a-96e4c8ebe1ec)
+![tela2 modo dark mobile flashlearn](https://github.com/user-attachments/assets/16af5486-57cd-4e61-ad49-714d34bff332)
 
 ---
 
