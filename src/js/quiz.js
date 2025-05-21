@@ -1318,7 +1318,6 @@ const quizDom = {
     nextQuestion: document.getElementById('nextQuestion')
 };
 
-
 document.querySelectorAll('.quiz-card').forEach(card => {
     card.addEventListener('click', () => {
         const lang = card.dataset.lang;
@@ -1434,28 +1433,87 @@ document.getElementById('nextQuestion').addEventListener('click', () => {
 });
 
 function endQuiz() {
+    // Calcular porcentagens
+    const totalQuestions = currentQuiz.length;
+    const correctAnswers = userAnswers.reduce((acc, answer, index) => {
+        return acc + (answer === currentQuiz[index].correct ? 1 : 0);
+    }, 0);
+    const correctPercentage = Math.round((correctAnswers / totalQuestions) * 100);
+    const wrongPercentage = 100 - correctPercentage;
+
     const resultsHTML = `
         <div class="result-content">
             <h2>Quiz Concluído! 🎉</h2>
-            <p>Sua pontuação final: ${score} pontos</p>
+            <p class="result-subtitle">Você completou o quiz sobre ${currentLang.toUpperCase()}</p>
+            
             <div class="result-summary">
-                <h3>📊  Análise do Seu Desempenho</h3>
+                <h3>📊 Resultado Final</h3>
+                <p>Pontuação: ${score} pontos (${correctAnswers} de ${totalQuestions} acertos)</p>
+                
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="correct-progress" style="width: ${correctPercentage}%"></div>
+                        <div class="wrong-progress" style="width: ${wrongPercentage}%"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span>${correctPercentage}% Acertos</span>
+                        <span>${wrongPercentage}% Erros</span>
+                    </div>
+                </div>
+                
+                <h3 class="detailed-results">📝 Detalhes por Questão</h3>
                 ${currentQuiz.map((question, index) => `
                     <div class="question-result ${userAnswers[index] === question.correct ? 'correct' : 'incorrect'}">
                         <h4>Questão ${index + 1}:</h4>
                         <p>${question.question}</p>
-                        <p>Suacorrect: ${question.options[userAnswers[index]]} ${userAnswers[index] === question.correct ? '✅' : '❌'}</p>
+                        <p>Sua resposta: ${question.options[userAnswers[index]]} ${userAnswers[index] === question.correct ? '✅' : '❌'}</p>
                         ${userAnswers[index] !== question.correct ? 
                             `<p>Resposta correta: ${question.options[question.correct]}</p>` : ''}
                         <p class="explanation">📚 Explicação: ${question.explanation}</p>
                     </div>
                 `).join('')}
             </div>
+            
             <div class="result-actions">
                 <button id="restartButton">Refazer Quiz</button>
                 <button id="returnButton">Voltar para Quizzes</button>
             </div>
         </div>
+        
+        <style>
+            .progress-container {
+                margin: 2rem 0;
+            }
+            .progress-bar {
+                height: 30px;
+                background: #fee2e2;
+                border-radius: 15px;
+                overflow: hidden;
+                display: flex;
+                margin-bottom: 0.5rem;
+            }
+            .correct-progress {
+                background: #22c55e;
+                height: 100%;
+                transition: width 1s ease;
+            }
+            .wrong-progress {
+                background: #ef4444;
+                height: 100%;
+                transition: width 1s ease;
+            }
+            .progress-labels {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.9rem;
+                color: #64748b;
+            }
+            .detailed-results {
+                margin-top: 2rem;
+                border-top: 1px solid #e2e8f0;
+                padding-top: 1.5rem;
+            }
+        </style>
     `;
 
     quizDom.quizResult.innerHTML = resultsHTML;
@@ -1468,7 +1526,7 @@ function endQuiz() {
 
     // Adicionar e configurar botão scroll-to-top
     const scrollTopBtn = document.createElement('button');
-    scrollTopBtn.className = 'scroll-to-top';
+    scrollTopBtn.className = 'scroll-to-top-btn';
     scrollTopBtn.innerHTML = '↑';
     scrollTopBtn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
     document.body.appendChild(scrollTopBtn);
@@ -1479,25 +1537,24 @@ function endQuiz() {
     });
 }
 
-// Função restartQuiz
 function restartQuiz() {
     // Resetar todas as variáveis do quiz
     currentQuestion = 0;
     score = 0;
     userAnswers = [];
     
-  // Resetar interface
-  quizDom.currentScore.textContent = score;
-  quizDom.optionsContainer.innerHTML = '';
-  quizDom.feedback.classList.add('hidden');
-  quizDom.nextQuestion.classList.add('hidden');
+    // Resetar interface
+    quizDom.currentScore.textContent = score;
+    quizDom.optionsContainer.innerHTML = '';
+    quizDom.feedback.classList.add('hidden');
+    quizDom.nextQuestion.classList.add('hidden');
     
-   // Alternar visibilidade
-   quizDom.quizResult.classList.add('hidden');
-   quizDom.quizActive.classList.remove('hidden');
-   
-   // Reiniciar questões
-   showQuestion();
+    // Alternar visibilidade
+    quizDom.quizResult.classList.add('hidden');
+    quizDom.quizActive.classList.remove('hidden');
+    
+    // Reiniciar questões
+    showQuestion();
 }
 
 // Botão Voltar
