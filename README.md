@@ -43,10 +43,9 @@ O **FlashLearn** é um guia de estudos interativo para **desenvolvimento web**, 
 ---
 
 ## 🎨 Capturas de Tela - Mobile 📱
-![tela mobile flashlearn](https://github.com/user-attachments/assets/0e1a6430-ae94-48a1-a8b4-62c841d4b9c6)
-![tela2 mobile flashlearn](https://github.com/user-attachments/assets/2eaf087d-2b38-467e-aab7-fa828cde96e1)
-![tela3 mobile flashlearn](https://github.com/user-attachments/assets/26b259c7-bfa3-435c-9f9a-4524d4e69c50)
-![tela4 mobile flashlearn](https://github.com/user-attachments/assets/02cca3d2-507d-46f4-ae30-6d17a3e7dbbc)
+![tela mobile flashlearn](https://github.com/user-attachments/assets/33f9cff4-7a57-4784-be57-1e88b51e240d)
+![tela3 mobile flashlearn](https://github.com/user-attachments/assets/71a52641-2b83-432c-b5a9-c9dc0e365042)
+![tela4 mobile flashlearn](https://github.com/user-attachments/assets/c37f3b69-22b8-404e-95b2-13ade6f0bfc0)
 
 ---
 
