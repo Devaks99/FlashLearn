@@ -1,0 +1,256 @@
+/* Modo dark */
+[data-theme="dark"] {
+   --primary-color: #3b82f6;
+    --secondary-color: #60a5fa;
+    --accent-color: #93c5fd;
+    --background-color: #0f172a;
+    --text-color: #f8fafc;
+    --highlight-color: #60a5fa;
+    --card-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .theme-toggle .sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .moon {
+    display: block;
+}
+
+/* Ajustes específicos para dark mode */
+[data-theme="dark"] {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .content-section,
+[data-theme="dark"] .quiz-card,
+[data-theme="dark"] .quiz-container,
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .study-commitments  {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border: none !important;
+    outline: none !important; 
+    box-shadow: none;
+}
+
+[data-theme="dark"] .quiz-card {
+    box-shadow: 
+        0 4px 6px rgba(59, 130, 246, 0.15), 
+        0 1px 3px rgba(59, 130, 246, 0.3) !important;   
+     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="dark"] .quiz-card:hover {
+    box-shadow: 
+        0 8px 12px rgba(59, 130, 246, 0.2), 
+        0 3px 6px rgba(59, 130, 246, 0.4) !important;
+    transform: translateY(-3px);  
+}
+
+[data-theme="dark"] .feature-card {
+    box-shadow: 
+        0 4px 6px rgba(59, 130, 246, 0.15),
+        0 1px 3px rgba(59, 130, 246, 0.3) !important;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="dark"] .feature-card:hover {
+    box-shadow: 
+        0 8px 12px rgba(59, 130, 246, 0.2),
+        0 3px 6px rgba(59, 130, 246, 0.4) !important;
+    transform: translateY(-3px);
+}
+
+[data-theme="dark"] pre {
+    background-color: #0f172a !important;
+    border: 1px solid #334155 !important;
+    border-radius: var(--border-radius) !important;
+}
+
+[data-theme="dark"] pre code {
+   background-color: transparent !important; 
+    color: #f8fafc !important;
+}
+
+[data-theme="dark"] .best-practice,
+[data-theme="dark"] .dica {
+    background: #334155;
+    border-left-color: var(--primary-color);
+}
+
+[data-theme="dark"] .study-commitments h2,
+[data-theme="dark"] .study-commitments ul {
+    color: #e2e8f0 !important; 
+}
+
+[data-theme="dark"] .study-commitments ul li {
+    border-bottom: 1px solid #334155 !important; 
+    padding: 0.5rem 0;
+}
+
+[data-theme="dark"] .study-commitments ul li:last-child {
+    border-bottom: none !important;
+}
+
+[data-theme="dark"] h3 {
+    color: #e2e8f0 !important; 
+}
+
+[data-theme="dark"] h4 {
+    color: #61a8ff !important; 
+}
+
+[data-theme="dark"] code.language-content {
+    background: #1e293b !important;
+    color: #93c5fd !important;
+    border: 1px solid #334155;
+}
+
+[data-theme="dark"] pre code.language-content {
+    background: #0f172a !important;
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+    
+}
+
+/* Se for uma lista de links */
+[data-theme="dark"] .study-commitments a {
+    color: #93c5fd !important; 
+}
+
+[data-theme="dark"] .study-commitments a:hover {
+    color: #bfdbfe !important; 
+}
+
+[data-theme="dark"] .sidebar {
+    background-color: #1e293b;
+}
+
+[data-theme="dark"] .menu-linguagens li a {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .menu-linguagens li a:hover {
+    background: white !important;
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .footer-copyright {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] main {
+    background-color: #0f172a;
+}
+
+[data-theme="dark"] .menu-actions {
+    background-color: #ffffff00; 
+    border-top: 1px solid #3b82f6;
+    padding: 1rem;
+    margin-top: 3px; 
+    padding-top: 1.5rem;
+}
+
+[data-theme="dark"] .menu-action {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #e2e8f0 !important; 
+    border: 1px solid #7ca4ddad;
+}
+
+[data-theme="dark"] .menu-action:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-color: #64748b; 
+    transform: translateX(5px); 
+}
+
+[data-theme="dark"] .footer-copyright {
+    background-color: #1e293b; 
+    color: rgba(255, 255, 255, 0.7) !important; /* Texto claro com transparência */
+    border-top: 1px solid #334155; /* Borda superior sutil */
+}
+
+[data-theme="dark"] .mobile-copyright {
+    background-color: #1e293b; 
+    color: rgba(255, 255, 255, 0.7) !important; 
+}
+
+[data-theme="dark"] .theme-toggle .sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .moon {
+    display: block;
+}
+
+[data-theme="dark"] .definition-box{
+    background-color:#0f172a;
+}
+
+[data-theme="dark"] .logic-concept{
+    background-color: #0f172a;
+}
+
+[data-theme="dark"] .interactive-example{
+    background-color: #0f172a;
+}
+
+[data-theme="dark"] .playlist-section{
+    background-color: #0f172a;
+}
+
+[data-theme="dark"] .playlist-credits{
+    background-color: #1e293b;
+}
+
+/* Menu mobile dark */
+[data-theme="dark"] .mobile-menu {
+    background-color: #1e293b; /* Cor de fundo do menu mobile no dark mode */
+    border-top: 1px solid #334155; /* Borda sutil no topo */
+}
+
+[data-theme="dark"] .mobile-menu .menu-linguagens li a {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo mais suave para os itens */
+    color: #e2e8f0 !important; /* Cor do texto */
+    border: 1px solid #334155; /* Borda sutil nos itens */
+}
+
+[data-theme="dark"] .mobile-menu .menu-linguagens li a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #93c5fd !important; /* Cor do texto no hover */
+    border-color: #3b82f6; /* Borda azul no hover */
+}
+
+[data-theme="dark"] .mobile-menu .menu-actions {
+    background-color: transparent;
+    border-top: 1px solid #334155; /* Borda de separação */
+}
+
+[data-theme="dark"] .mobile-menu .menu-action {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0 !important;
+    border: 1px solid #334155;
+}
+
+[data-theme="dark"] .mobile-menu .menu-action:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: #3b82f6;
+}
+
+[data-theme="dark"] .mobile-menu .footer-copyright {
+    background-color: #1e293b;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border-top: 1px solid #334155;
+}
+
+[data-theme="dark"] .mobile-menu .menu-title {
+    color: #93c5fd !important; /* Cor do título do menu */
+    opacity: 0.9;
+}
+/* fim de todo o Dark */

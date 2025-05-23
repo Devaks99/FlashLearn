@@ -1,0 +1,64 @@
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 0;
+    position: static;
+    right: 10px;
+    top: 50%;
+    transform: none;
+}
+
+/* Container do botão de tema para desktop */
+.theme-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+}
+
+/* Botão de tema - versão desktop */
+.theme-toggle-container .theme-toggle {
+    position: static;
+    transform: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle-container .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .theme-toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    display: none;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle svg {
+    width: 22px;
+    height: 22px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle .moon {
+    display: none;
+}

@@ -1,31 +1,19 @@
-// src/js/menu-mobile.js
+// Garantir que o menu funcione em todos os dispositivos
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const body = document.body;
-
-    function toggleMenu() {
-        hamburger.classList.toggle('active');
+    
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
         mobileMenu.classList.toggle('active');
-        body.classList.toggle('no-scroll');
-    }
-
-    hamburger.addEventListener('click', function(e) {
-        e.stopPropagation();
-        toggleMenu();
     });
-
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.mobile-menu') && !e.target.closest('.hamburger')) {
-            if (mobileMenu.classList.contains('active')) {
-                toggleMenu();
-            }
-        }
-    });
-
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
-            toggleMenu();
-        }
+    
+    // Fechar menu ao clicar em um item
+    const menuItems = document.querySelectorAll('.mobile-menu a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        });
     });
 });
